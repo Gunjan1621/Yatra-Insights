@@ -4,7 +4,7 @@ body {
     font-family: Gradute, Arial;
     height : 3000px;
 }
-h1 , p{
+h1 ,h2 , p{
     margin: 0;
     padding: 0;
 }
@@ -89,4 +89,94 @@ nav {
 .heading-body{
     font-size: 1.125rem;
     margin-bottom: 0.875rem;
+}
+/*Contact Form CSS*/
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+    gap: 6rem;
+}
+.form-left{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #ccc;
+    margin:  20px 0px;
+    box-shadow: -6px 6px 0px rgba(0,0,0,0.15);
+    background: white;
+    padding: 1.5rem;
+    width : 23rem;
+}
+.form-right{
+    margin-top: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+}
+.form-details{
+    display: flex;
+    margin-bottom: 1.125rem;
+}
+.fimg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+    background-color: burlywood;
+    margin-right: 1rem;
+}
+.form-img{
+    height: 1.75rem;
+}
+.info-container{
+    font-size: 1.125rem;
+    margin-top: 1rem;
+}
+.add-info{
+    margin-bottom: 0;
+}
+.info-container span{
+    font-weight: 700;
+}
+.form-right h2 , p ,.form-left h1{
+    margin-bottom: 1.5rem;
+}
+.form-left input{
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+.msg-box {
+    height : 6rem;
+    vertical-align: text-top;
+}
+.msg-btn{
+    height : 2.25rem;
+    width: 7rem;
+    background-color: burlywood;
+    border:none;
+    border-radius: 8px;
+    color: white;
+}
+.msg-btn:hover{
+    cursor : pointer;
+}
+.pa{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background: gray;
+}
+@media (max-width : 550)
+{
+    .form{
+        display: flex;
+        flex-direction: column;
+    }
 }
