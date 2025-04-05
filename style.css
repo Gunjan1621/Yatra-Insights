@@ -14,11 +14,6 @@ header{
     height: 4rem;
 }
 /*Main-Page*/
-#main {
-    background-image: url('img/Fort.jpg');
-    background-size: cover;
-    background-position: center center;
-}
 .container {
     height: 70vh;
     padding: 1rem;
@@ -27,16 +22,14 @@ header{
 nav {
     display : flex;
     justify-content: space-between;
-    height : 5rem;
-    background: #aa6c39;
     width: 100vw;
     
 }
-#main {
-    background-image: url('Fort.jpg');
+.landing {
+    background-image: url('img/bg.jpg');
     background-size: cover;
     background-position: center center;
-    margin-top:1rem;
+    margin-top: 0;
 }
 .container {
     height: 70vh;
@@ -177,7 +170,7 @@ nav {
 .form-right h2 ,.form-right p ,.form-left h1{
     margin-bottom: 1.5rem;
 }
-.form-left input{
+.form-left input[type="text"] {
     padding: 10px 0px;
     border: none;
     outline: none;
@@ -185,8 +178,11 @@ nav {
     margin-bottom: 1rem;
 }
 .msg-box {
-    height : 6rem;
-    vertical-align: text-top;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 4.5rem;
 }
 .msg-btn{
     height : 2.25rem;
