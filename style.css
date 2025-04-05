@@ -129,23 +129,30 @@ nav {
     object-fit: contain;
    
 }
+.left-section{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important; /* Ensure alignment to the left */
+    flex-wrap: nowrap; /* Prevents text from wrapping below */
+    gap: 10px; /* Adds spacing between logo and text */
+}
 
 /* Responsivene Navbar */   
 
 @media screen and (max-width:1300px){
     .landing{
-        height: 60vh;
+        height: 80vh;
     }
     .nav{
          display: none;
          flex-direction: column;
-         justify-content: space-evenly;
+         justify-content: space-between;
          position: absolute;
          top: 70px;
          margin-bottom: -50px;
          z-index: 1000;
          left: 0;
-         height: 30vw;
+         height: 60%;
          width: 100%;
          background: rgba(255,255,255,0.15);
          backdrop-filter: blur(10px);
@@ -204,53 +211,44 @@ nav {
 
    
 }
-@media(max-width:1200px){
-    .nav{
-        height: 35vh;
-    }
-}
-@media (max-width:675px){
-    .nav{
-        max-width: 100%;
-    }
-}
-.left-section{
-    display: flex !important;
-    align-items: center !important;
-    justify-content: flex-start !important; /* Ensure alignment to the left */
-    flex-wrap: nowrap; /* Prevents text from wrapping below */
-    gap: 10px; /* Adds spacing between logo and text */
-}
 @media (max-width: 768px) {
-     .left-section{
-        justify-content: space-between;
-        width: 100%;
-    }
+    .left-section{
+       justify-content: space-between;
+       width: 100%;
+   }
 
 }
 
 .landing {
-    background-image: url('img/amber.jpg');
-    background-size: cover;
-    background-position: top center;
-    margin-top: 0;
-    width: 100vw;
+   background-image: url('img/amber.jpg');
+   background-size: cover;
+   background-position: top center;
+   margin-top: 0;
+   width: 100vw;
 }
-@media(max-width:580px){
-    .landing{
-        width: 110vw;
-        height: 100vw;
-        
-    }
+@media(max-width:800px){
+   .landing{
+       width: 250vw;
+       
+   }
+   .nav{
+       width: 250%;
+       height: 65%;
+   }
 }
-@media(max-width:425px){
-    .landing{
-        width: 190vw;
-        height: 150vw;
-        background-position: top center;
-        background-size: cover;        
-    }
+@media(max-width:550px){
+   .landing{
+       width: 250%;
+       height: 90vh;    
+   }
+   .nav{
+       height: 70%;
+   }
 }
+
+
+/* Main page content */
+
 .container {
     height: 60vh;
     padding: 1rem;
