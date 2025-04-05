@@ -9,6 +9,36 @@ h1 ,h2 ,h3 , p{
     margin: 0;
     padding: 0;
 }
+#preloader{
+    background: #fff;
+    height: 100vw;
+    width: 100vw;
+    position: fixed;
+    z-index: 10000;
+    transition: opacity 0.5s ease;
+}
+#preloader.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+.loadercontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loadercontent h1{
+    text-align: center;
+    color: #000;
+   margin-top: 15rem;
+}
+
+.loadercontent img{
+    margin-right: 4rem;
+    height: 200px;
+    mix-blend-mode: multiply;
+}
+
 /* header{
     display: flex;
     height: 4rem;
