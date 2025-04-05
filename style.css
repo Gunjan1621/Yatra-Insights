@@ -9,12 +9,10 @@ h1 ,h2 , p{
     margin: 0;
     padding: 0;
 }
-<<<<<<< HEAD
 header{
     display: flex;
     height: 4rem;
-    
-=======
+}
 /*Main-Page*/
 #main {
     background-image: url('img/Fort.jpg');
@@ -24,7 +22,7 @@ header{
 .container {
     height: 70vh;
     padding: 1rem;
->>>>>>> af68112b182f49c64566a60f6ccd1b5e9813d979
+
 }
 nav {
     display : flex;
