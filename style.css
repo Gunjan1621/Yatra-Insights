@@ -157,19 +157,22 @@ nav {
     width: 3rem;
     background-color: burlywood;
     margin-right: 1rem;
+    margin-top: -10px;
+   
 }
 .form-img{
     height: 1.75rem;
 }
 .info-container{
     font-size: 1.125rem;
-    margin-top: 1rem;
+    vertical-align: top;
 }
-.add-info{
-    margin-bottom: 0;
-}
+
 .info-container span{
     font-weight: 700;
+}
+.contpin{
+    margin-top: -15px;
 }
 .form-right h2 ,.form-right p ,.form-left h1{
     margin-bottom: 1.5rem;
