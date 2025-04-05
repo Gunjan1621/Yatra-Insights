@@ -1,3 +1,4 @@
+/*General CSS*/
 body {
     margin : 0;
     padding : 0;
@@ -8,6 +9,7 @@ h1 ,h2 , p{
     margin: 0;
     padding: 0;
 }
+/*Main-Page*/
 #main {
     background-image: url('img/Fort.jpg');
     background-size: cover;
@@ -142,7 +144,7 @@ nav {
 .info-container span{
     font-weight: 700;
 }
-.form-right h2 , p ,.form-left h1{
+.form-right h2 ,.form-right p ,.form-left h1{
     margin-bottom: 1.5rem;
 }
 .form-left input{
