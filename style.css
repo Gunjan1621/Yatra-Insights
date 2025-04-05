@@ -8,46 +8,214 @@ h1 ,h2 ,h3 , p{
     margin: 0;
     padding: 0;
 }
-header{
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-top: 0.5px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.12);
+    height: 45px;
+    box-shadow: 0px 4px 30px rgba(0,0,0,0.1);
+    color: white;
+    padding: 1rem 2rem;
+    align-items: center;
+    
+}
+.nav {
+    display: flex;
+   gap: 350px;
+}
+.nav a {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-weight: bold;
+    color: #f8f9fa;
+    background-clip: text;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+}
+.nav a::after{
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    background: linear-gradient(to right,#f4c430,#e67e22,#4169e1);
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transition:transform 0.3s ease-in-out;
+}
+.nav a:hover::after{
+    transform: scaleX(1);
+}
+.nav a:hover {
+   background: linear-gradient(to right,#f4c430,#e67e22,#4169e1);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+
+}
+.ham{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+#menu{
+    display: none;
+}
+.ham span{
+  display: block;
+  width: 35px;
+  height: 4px;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s;
+  left: 90px;
+
+}
+
+
+@media screen and (max-width:851px){
+    .nav{
+         display: none;
+         flex-direction: column;
+         position: absolute;
+         top: 70px;
+         z-index: 1000;
+         left: 0;
+         height: 70vw;
+         width: 100%;
+         background: rgba(255,255,255,0.15);
+         backdrop-filter: blur(10px);
+         -webkit-backdrop-filter: blur(10px);
+          border-radius: 15px;
+         box-shadow: 0px 4px 30px rgba(0,0,0,0.1);
+         text-align: center;
+         border: 1px solid rgba(255,255,255,0.2);
+    }
+    .nav .middle-section  a{
+        display: block;
+        padding: 15px;
+        position: relative;
+       text-decoration: none;
+       color: white;
+       transition: all 0.3s ease-in-out;
+    }
+    .nav a:hover{
+        background: linear-gradient(to right,#f4c430,#e67e22,#4169e1);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: scale(1);
+
+    
+    }
+    .nav a::after{
+        content: " ";
+        position: absolute;
+        left: 50%;
+        bottom: -3px;
+        width: 0%;
+        height: 2px;
+        background: linear-gradient(to right,#f4c430,#e67e22,#4169e1);
+        transform: scaleX(0);
+        transform-origin: left;
+        transition:transform 0.3s ease-in-out;
+    }
+    .nav a:hover::after{
+        transform: scaleX(1);
+        width: 40%;
+        left: 30%;
+    }
+    .ham{
+        display: flex;
+    }
+
+    #menu:checked~ .nav{
+           display: flex;
+    }
+
+   
+}
+@media (max-width:675px){
+    .nav{
+        max-width: 100%;
+    }
+}
+.left-section{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important; /* Ensure alignment to the left */
+    flex-wrap: nowrap; /* Prevents text from wrapping below */
+    gap: 10px; /* Adds spacing between logo and text */
+}
+
+
+
+.logo {
+    height: 70px;
+    object-fit: contain;
+}
+
+
+
+
+
+/* Fix mobile layout */
+@media (max-width: 768px) {
+    
+
+    .left-section{
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}
+/* header{
     display: flex;
     height: 4rem;
 }
 /*Main-Page*/
-.container {
-    height: 70vh;
-    padding: 1rem;
-
-}
-nav {
+/* nav {
     display : flex;
     justify-content: space-between;
     width: 100vw;
+    margin-top: 1rem;
     
 }
+.logo{
+    height: 6rem;
+  
+}  */
 .landing {
     background-image: url('img/amber.jpg');
     background-size: cover;
     background-position: top center;
     margin-top: 0;
+    width: 100vw;
 }
 .container {
-    height: 70vh;
+    height: 60vh;
     padding: 1rem;
-   
 }
-
-.middle-section{
+/* .middle-section{
     display: flex;
     gap : 2rem;
     height : 100%;
     align-items: center;
-}
-.left-section{
+    margin-top: 5px;
+} */
+/* .left-section{
     display: flex;
     align-items: center;
     height: 100%;
     padding-left: 1.5rem;
-}
+} */
 .dark-mode-logo {
     height : 2.5rem;
 }
@@ -58,7 +226,7 @@ nav {
     justify-content: center;
     padding-right:1.5rem ;
 }
-.middle-section a{
+/* .middle-section a{
     color: #FAE3C6;
     font-size: 1.25rem;
     font-weight: 600;
@@ -69,43 +237,49 @@ nav {
     color: #f5f5f5;
     font-weight: 700;
     
-}
+}  */
 
 .btn button{
-   background: linear-gradient(135deg,#32bdd6,#ccc);
-   color: white;
-   font-weight: 700;
-    font-size: 10rem;
+  background-color: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+   color: #fff;
+   font-weight: bold;
+    font-size: 20px;
    padding: 15px 24px;
-   border-radius: 8px;
-   font-size: 16px;
-   border: none;
+   border-radius: 10px;
+    border: 2px solid rgba(255,255,255,0.4);
    cursor: pointer;
+   box-shadow: 0 4px 12px rgb(0,0,0,0.2);
    transition: all 0.3s ease-in-out;
+   margin-top: 1rem;
 }
 .btn button:hover{
-  background: linear-gradient(135deg,#ccc,#e78f1c);
-  transform: scale(1.12);
-  text-transform: uppercase;
-  box-shadow: 0px 4px 10px rgba(241, 99, 17, 0.5);
+    background: rgba(255,255,255,0.25);
+    transform: translateY(5px)scale(1.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
+
 .main-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 4.5rem;
-    color : white;
+    margin-top: 6rem;
+    color:#f9f9f9;
 }
 .intro-heading , .main-heading ,.heading-body{
     text-shadow: 2px 2px 7px rgb(0,0,0);
 }
 .intro-heading{
-    font-size: 3rem;   
+    font-size: 2.5rem;   
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .main-heading{
-    font-size: 6.8rem;
+    font-size: 7.5rem;
     margin-top: -1.25rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
 }
 .heading-body{
     font-size: 1.125rem;
