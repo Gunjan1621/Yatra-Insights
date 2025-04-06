@@ -6,8 +6,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
-        <title>Simple Project</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+        <title>YatraInsights</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="img/logoyi.png" type="image/x-icon">
 
     </head>
     <body>
@@ -17,7 +20,7 @@
              <img src="344.gif" alt="">
             </div>
     </div>
-    <div class="landing">
+    <div class="landing" id="landingpage">
         <header>
             <nav>
                 <div class="left-section">
@@ -38,8 +41,7 @@
                     <a href="#contact-form">Contact Us</a>
                     </div>
                     <div class="right-section">
-                
-                <img class="dark-mode-logo" src="img/whitedarkmode.png">
+                      <a href="login.html"><i class="fas fa-sign-out fa-lg"></i></a>
             </div>
             </div>
         </nav>
@@ -86,18 +88,18 @@
                 <h1>DESTINATIONS</h1>
             </div>
             <p class="d-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus eligendi inventore officiis nihil! Veritatis, sit!
+                Discover breathtaking destinations across India, rich in culture, history, and natural wonders waiting to be explored.
             </p>
             <div class="filter-btn">
-                <button>All</button>
-                <button>Hertiage Sites</button>
-                <button>Architecture</button>
-                <button>Beach</button>
-                <button>Hill Station</button>
+                <button data-filter="all">All</button>
+                <button data-filter="heritage">Hertiage Sites</button>
+                <button data-filter="architecture">Architecture</button>
+                <button data-filter="beach">Beach</button>
+                <button data-filter="hill">Hill Station</button>
             </div>
             <div class="des-card-container">
                 <!-- Card-1 -->
-                <div class="des-card">
+                <div class="des-card" data-category="heritage">
                     <img class="card-img" src="img/taj-mahal-5570765_1920.jpg">
                     <div class="card-info">
                         <h3>Taj Mahal</h3>
@@ -107,7 +109,7 @@
                     </div>
                 </div>
                 <!-- Card-2 -->
-                <div class="des-card">
+                <div class="des-card" data-category="beach">
                     <img class="card-img" src="img/bagabeach.jpg">
                     <div class="card-info">
                         <h3>Baga Beach</h3>
@@ -117,7 +119,7 @@
                     </div>
                 </div>
                 <!-- Card-3 -->
-                <div class="des-card">
+                <div class="des-card" data-category="hill">
                     <img class="card-img" src="img/shimla.jpg">
                     <div class="card-info">
                         <h3>Shimla</h3>
@@ -127,7 +129,7 @@
                     </div>
                 </div>
                 <!-- Card-4 -->
-                <div class="des-card">
+                <div class="des-card" data-category="architecture">
                     <img class="card-img" src="img/qutub-minar-2155776_1920.jpg">
                     <div class="card-info">
                         <h3>Qutab Minar</h3>
@@ -137,7 +139,7 @@
                     </div>
                 </div>
                 <!-- Card-5 -->
-                <div class="des-card">
+                <div class="des-card" data-category="hill">
                     <img class="card-img" src="img/roopkund trek.jpg">
                     <div class="card-info">
                         <h3>Roopkund Trek</h3>
@@ -147,7 +149,7 @@
                     </div>
                 </div>
                 <!-- Card-6 -->
-                <div class="des-card">
+                <div class="des-card" data-category="heritage">
                     <img class="card-img" src="img/kashi vishwanath.jpg">
                     <div class="card-info">
                         <h3>Kashi Vishwanath</h3>
@@ -256,10 +258,10 @@
             <div class="row">
                 <div class="col-1">
                     <h3>USEFUL LINKS</h3>
-                    <a href="#">Home</a>
+                    <a href="#landingpage">Home</a>
                     <a href="#aboutindia">India Unvieled</a>
                     <a href="#destinations">Destinations</a>
-                    <a href="#">Visitor's Voice</a>
+                    <a href="#testimonial-section">Visitor's Voice</a>
                     <a href="#contact-form">Contact Us</a>
                 </div>
                 <div class="col-2">
