@@ -1,5 +1,5 @@
-
-  window.addEventListener("load", function () {
+// Preloader
+   window.addEventListener("load", function () {
     setTimeout(function () {
       const preloader = document.getElementById("preloader");
       preloader.classList.add("hide");
@@ -8,6 +8,7 @@
       }, 500); 
     }, 3000);
   });
+  // Login Page
   function validateLogin() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -26,4 +27,26 @@
 
     return false;
   }
+  // Filter destinations
+  document.addEventListener("DOMContentLoaded", () => {
+    const filterButtons = document.querySelectorAll("[data-filter]");
+    const cards = document.querySelectorAll(".des-card");
+  
+    filterButtons.forEach(button => {
+      button.addEventListener("click", () => {
+        const selectedCategory = button.getAttribute("data-filter");
+  
+        cards.forEach(card => {
+          const cardCategory = card.getAttribute("data-category");
+  
+          if (selectedCategory === "all" || cardCategory === selectedCategory) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+  });
+  
 
