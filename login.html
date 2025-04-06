@@ -13,21 +13,27 @@
                 <div class="heading">
                    <h1>Login to YatraInsights</h1> 
                 </div>
+                <form onsubmit="return validateLogin()">
                 <div class="login-details-container">
                     <p>Username</p>
-                    <input type="text" placeholder="your-email@gmail.com">
+                    <input type="email" placeholder="your-email@gmail.com" id="username" required>
                 </div>
                 <div class="login-details-container">
                     <p>Password</p>
-                    <input type="text" placeholder="Your Password">
+                    <input type="password" placeholder="Your Password" id="password" required>
                 </div>
                 <div class="container">
                     <input type="checkbox">
                     <p>Remember me</p>
                     <a href="#">Forget Password</a>
                 </div>
-                <button class="login-btn"><a href="index.html">Log In</a></button>
+                <button class="login-btn">Log In</button>
+            </form>
+            <p id="login-message" class="login-message"></p>
             </div>
+            
         </section>
+        <script src="script.js"></script>
+
     </body>
 </html>
