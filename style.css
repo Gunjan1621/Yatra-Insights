@@ -350,7 +350,23 @@ nav {
     font-size: 1.125rem;
     margin-bottom: 0.875rem;
 }
-
+/*About India CSS
+.about-container{
+    background: #e8bfa1;
+    padding: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+.about-heading{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.collage-img{
+    height:3rem;
+    width:6rem;
+}
+*/
 /*Destination CSS*/
 #destinations{
     max-width: 1500px;
