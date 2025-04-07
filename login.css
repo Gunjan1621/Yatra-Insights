@@ -27,6 +27,7 @@ header {
     border : none;
     padding: 32px;
     background-color: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
 }
 .heading{
     margin-bottom: 32px;
@@ -67,6 +68,10 @@ header {
     padding : 12px 28px;
     border-radius: 4px;
     margin-left: 130px;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background-color: #5ca9e9 ;
 }
 .login-message{
     text-align: center;
