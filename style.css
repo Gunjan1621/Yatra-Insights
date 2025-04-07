@@ -9,6 +9,8 @@ h1 ,h2 ,h3 , p{
     margin: 0;
     padding: 0;
 }
+/* Preloader */
+
 #preloader{
     background: #fff;
     height: 100vw;
@@ -27,8 +29,10 @@ h1 ,h2 ,h3 , p{
     justify-content: center;
     align-items: center;
 }
-.loadercontent h1{
+.loadercontent h3{
     text-align: center;
+    font-style: italic;
+    font-size: 2rem;
     color: #000;
    margin-top: 15rem;
 }
@@ -38,49 +42,8 @@ h1 ,h2 ,h3 , p{
     height: 200px;
     mix-blend-mode: multiply;
 }
-
-/* header{
-    display: flex;
-    height: 4rem;
-}
-/*Main-Page*/
-/* nav {
-    display : flex;
-    justify-content: space-between;
-    width: 100vw;
-    margin-top: 1rem;
-    
-}
-.logo{
-    height: 6rem;
-  
-}  */
-  /* .middle-section{
-    display: flex;
-    gap : 2rem;
-    height : 100%;
-    align-items: center;
-    margin-top: 5px;
-} */
-/* .left-section{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-left: 1.5rem;
-} */
- /* .middle-section a{
-    color: #FAE3C6;
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: text-decoration 0.5s;
-}
-.middle-section a:hover{
-    color: #f5f5f5;
-    font-weight: 700;
-    
-}  */
   /* Navbar */
+
 nav {
     display: flex;
     align-items: center;
@@ -241,13 +204,7 @@ nav {
 
 }
 
-/* @media (max-width: 768px) {
-    .left-section{
-       justify-content: space-between;
-       width: 100%;
-   }
-
-}*/
+/* Landing Page */
 
 .landing {
    background-image: url('img/amber.jpg');
@@ -256,46 +213,9 @@ nav {
    margin-top: 0;
    width: 100vw;
 }
-/*
-@media(max-width:800px){
-   .landing{
-       width: 250vw;
-       
-   }
-   .nav{
-       width: 250%;
-       height: 65%;
-   }
-}
-@media(max-width:550px){
-   .landing{
-       width: 250%;
-       height: 90vh;    
-   }
-   .nav{
-       height: 70%;
-   }
-}
-@media(max-width:460px){
-   .landing{
-       width: 258%;
-       height: 90vh;    
-   }
-   .nav{
-       height: 70%;
-   }
-} */
-
-
-/* Main page content */
-
 .container {
     height: 60vh;
     padding: 1rem;
-}
-
-.dark-mode-logo {
-    height : 2.5rem;
 }
 .right-section{
     display: flex;
@@ -319,6 +239,8 @@ nav {
    cursor: pointer;
    box-shadow: 0 4px 12px rgb(0,0,0,0.2);
    transition: all 0.3s ease-in-out;
+   transform: translateY(60px);
+   animation: fadeInSlide 4.5s ease-in-out forwards;
    margin-top: 1rem;
 }
 .btn button:hover{
@@ -334,25 +256,35 @@ nav {
     align-items: center;
     margin-top: 6rem;
     color:#f9f9f9;
+
 }
 .intro-heading , .main-heading ,.heading-body{
     text-shadow: 2px 2px 7px rgb(0,0,0);
+  transform: translateY(-60px);
+  animation: fadeInSlide 4.5s ease-in-out forwards;
 }
 .intro-heading{
     font-size: 2.5rem;   
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+@keyframes fadeInSlide{
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 .main-heading{
     font-size: 7.5rem;
     margin-top: -1.25rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    
 }
 .heading-body{
     font-size: 1.125rem;
     margin-bottom: 0.875rem;
 }
-/*About India CSS*/
+/*About India*/
+
 #aboutindia{
     background-color: #fff;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
@@ -363,6 +295,9 @@ nav {
     padding: 2rem 6rem;
     box-sizing: border-box;
     width: 100%;
+    margin-top: 100px ;
+    margin-left: auto;
+    margin-right: auto;
 }
 .about-heading {
     text-align: center;
@@ -405,7 +340,8 @@ nav {
     width:100%;
 }
 
-/*Destination CSS*/
+/*Destination*/
+
 #destinations{
     max-width: 1500px;
     text-align: center;
@@ -418,8 +354,7 @@ nav {
 }
 .destination{
     padding: 2rem 15%;
-    margin-left: auto;
-    margin-right: auto;
+   margin: 50px auto;
     background-color: #f8f0ea;
     position: relative;
 }
@@ -438,7 +373,7 @@ nav {
     left: 41%;
     top:70px;
     background-color: #a85b36; 
-    width: 19%;
+    width: 18%;
     height: 3px;
     transform: scaleX(1);
     transition:transform 0.3s ease-in-out;
@@ -475,7 +410,10 @@ nav {
     border:none;
     border-radius: 16px;
 }
-
+.filter-btn button.active{
+    background-color: #d09c7b;
+    color: #fff;
+}
 .des-card-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -486,6 +424,13 @@ nav {
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+.des-card:hover{
+    transform: scale(1.05);
+     box-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+     z-index: 1;
 }
 .card-img{
     height : 200px;
@@ -510,10 +455,11 @@ nav {
     
 }
 /* Reviews */
+
 #testimonial-section {
      max-width: 1500px;
     text-align: center;
-    margin: auto;
+    margin: 100px auto;
     padding: 40px 20px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -586,27 +532,15 @@ nav {
     font-size: 18px;
 }
 
-/*Contact Form CSS*/
+/*Contact Form*/
+
 .form{
     display: flex;
     justify-content: center;
     background: #f9f9f9;
     padding: 2rem;
+    margin-top: 100px auto;
 }
-/* @media(max-width:1000px){
-    .form{
-        width:190%
-    }
-}
-@media(max-width:470px){
-    .form-body{
-        display: flex;
-        flex-direction: column;
-        margin-left: -30px;
-    }
-} */
-
-
 .contact-form-heading h1{
     text-align: center;
     font-size: 1.5rem;
@@ -616,7 +550,7 @@ nav {
 .contact-form-heading h1::after{
     content: " ";
     position: absolute;
-    left: 0;
+    left: 1%;
     bottom: -8px;
     background-color: #a85b36; 
     width: 100%;
@@ -714,7 +648,8 @@ nav {
     background: gray;
 }
 
-/*Footer CSS*/
+/*Footer*/
+
 footer{
     width: 100vw;
 }
@@ -723,54 +658,6 @@ footer{
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to top, #d09c7b, #e8bfa1);
 }
-/* @media(max-width:1000px){
-    .landing{
-        width:205%
-    }
-    footer{
-        width: 205%;
-        
-    }
-}
-
-@media(max-width:425px){
-    .landing{
-        width: 206%;
-    }
-    footer{
-        width: 206%;
-    }
-}
-@media(max-width:370px){
-    .landing{
-        width: 212%;
-    }
-    footer{
-        width: 212%;
-    }
-}
-@media(max-width:590px){
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
-    .col-1{
-        margin-bottom: 50px;
-    }
-    .col-2{
-        margin-bottom: 50px;
-    }
-    .col-3{
-        display: flex;
-        flex-direction: column;
-    }
-    .col-3 h3{
-        margin-left: 15px;
-    }
-    .footer-container{
-        padding: 100px 40%;
-    }
-} */
 .row{
     display: flex;
     justify-content: space-between;
@@ -858,16 +745,3 @@ footer{
 .col-3:hover svg{
     transform: scale(1.15);
 }
-/* @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .newsletter-input{
-        width: 18rem;
-    }
-    .col-1, .col-2, .col-3 {
-      margin-bottom: 20px;
-    }
-} */
