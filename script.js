@@ -30,7 +30,7 @@
   // Filter destinations
   document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll("[data-filter]");
-    const cards = document.querySelectorAll(".des-card");
+    const cards = document.querySelectorAll("[data-category]");
   
     filterButtons.forEach(button => {
       button.addEventListener("click", () => {
