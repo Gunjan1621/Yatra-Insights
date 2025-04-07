@@ -9,6 +9,8 @@ h1 ,h2 ,h3 , p{
     margin: 0;
     padding: 0;
 }
+/* Preloader */
+
 #preloader{
     background: #fff;
     height: 100vw;
@@ -38,49 +40,8 @@ h1 ,h2 ,h3 , p{
     height: 200px;
     mix-blend-mode: multiply;
 }
-
-/* header{
-    display: flex;
-    height: 4rem;
-}
-/*Main-Page*/
-/* nav {
-    display : flex;
-    justify-content: space-between;
-    width: 100vw;
-    margin-top: 1rem;
-    
-}
-.logo{
-    height: 6rem;
-  
-}  */
-  /* .middle-section{
-    display: flex;
-    gap : 2rem;
-    height : 100%;
-    align-items: center;
-    margin-top: 5px;
-} */
-/* .left-section{
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-left: 1.5rem;
-} */
- /* .middle-section a{
-    color: #FAE3C6;
-    font-size: 1.25rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: text-decoration 0.5s;
-}
-.middle-section a:hover{
-    color: #f5f5f5;
-    font-weight: 700;
-    
-}  */
   /* Navbar */
+
 nav {
     display: flex;
     align-items: center;
@@ -241,13 +202,7 @@ nav {
 
 }
 
-/* @media (max-width: 768px) {
-    .left-section{
-       justify-content: space-between;
-       width: 100%;
-   }
-
-}*/
+/* Landing Page */
 
 .landing {
    background-image: url('img/amber.jpg');
@@ -256,46 +211,9 @@ nav {
    margin-top: 0;
    width: 100vw;
 }
-/*
-@media(max-width:800px){
-   .landing{
-       width: 250vw;
-       
-   }
-   .nav{
-       width: 250%;
-       height: 65%;
-   }
-}
-@media(max-width:550px){
-   .landing{
-       width: 250%;
-       height: 90vh;    
-   }
-   .nav{
-       height: 70%;
-   }
-}
-@media(max-width:460px){
-   .landing{
-       width: 258%;
-       height: 90vh;    
-   }
-   .nav{
-       height: 70%;
-   }
-} */
-
-
-/* Main page content */
-
 .container {
     height: 60vh;
     padding: 1rem;
-}
-
-.dark-mode-logo {
-    height : 2.5rem;
 }
 .right-section{
     display: flex;
@@ -352,7 +270,8 @@ nav {
     font-size: 1.125rem;
     margin-bottom: 0.875rem;
 }
-/*About India CSS*/
+/*About India*/
+
 #aboutindia{
     background-color: #fff;
     box-shadow: 4px 4px 4px rgba(0,0,0,0.3);
@@ -405,7 +324,8 @@ nav {
     width:100%;
 }
 
-/*Destination CSS*/
+/*Destination*/
+
 #destinations{
     max-width: 1500px;
     text-align: center;
@@ -475,6 +395,10 @@ nav {
     border:none;
     border-radius: 16px;
 }
+.filter-btn button.active{
+    background-color: #d09c7b;
+    color: #fff;
+}
 .des-card-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -509,6 +433,7 @@ nav {
     
 }
 /* Reviews */
+
 #testimonial-section {
      max-width: 1500px;
     text-align: center;
@@ -585,27 +510,14 @@ nav {
     font-size: 18px;
 }
 
-/*Contact Form CSS*/
+/*Contact Form*/
+
 .form{
     display: flex;
     justify-content: center;
     background: #f9f9f9;
     padding: 2rem;
 }
-/* @media(max-width:1000px){
-    .form{
-        width:190%
-    }
-}
-@media(max-width:470px){
-    .form-body{
-        display: flex;
-        flex-direction: column;
-        margin-left: -30px;
-    }
-} */
-
-
 .contact-form-heading h1{
     text-align: center;
     font-size: 1.5rem;
@@ -713,7 +625,8 @@ nav {
     background: gray;
 }
 
-/*Footer CSS*/
+/*Footer*/
+
 footer{
     width: 100vw;
 }
@@ -722,54 +635,6 @@ footer{
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to top, #d09c7b, #e8bfa1);
 }
-/* @media(max-width:1000px){
-    .landing{
-        width:205%
-    }
-    footer{
-        width: 205%;
-        
-    }
-}
-
-@media(max-width:425px){
-    .landing{
-        width: 206%;
-    }
-    footer{
-        width: 206%;
-    }
-}
-@media(max-width:370px){
-    .landing{
-        width: 212%;
-    }
-    footer{
-        width: 212%;
-    }
-}
-@media(max-width:590px){
-    .row{
-        display: flex;
-        flex-direction: column;
-    }
-    .col-1{
-        margin-bottom: 50px;
-    }
-    .col-2{
-        margin-bottom: 50px;
-    }
-    .col-3{
-        display: flex;
-        flex-direction: column;
-    }
-    .col-3 h3{
-        margin-left: 15px;
-    }
-    .footer-container{
-        padding: 100px 40%;
-    }
-} */
 .row{
     display: flex;
     justify-content: space-between;
@@ -857,16 +722,3 @@ footer{
 .col-3:hover svg{
     transform: scale(1.15);
 }
-/* @media (max-width: 768px) {
-    .row {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-    .newsletter-input{
-        width: 18rem;
-    }
-    .col-1, .col-2, .col-3 {
-      margin-bottom: 20px;
-    }
-} */
