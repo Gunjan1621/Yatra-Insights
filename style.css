@@ -254,7 +254,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 6rem;
+    margin-top: 9rem;
     color:#f9f9f9;
 
 }
@@ -295,7 +295,7 @@ nav {
     padding: 2rem 6rem;
     box-sizing: border-box;
     width: 100%;
-    margin-top: 100px ;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
 }
