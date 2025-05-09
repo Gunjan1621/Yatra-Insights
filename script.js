@@ -1,13 +1,20 @@
-// Preloader
+//Preloader
    window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    if(window.location.hash){
+      preloader.style.display="none";
+      return;
+    }
     setTimeout(function () {
-      const preloader = document.getElementById("preloader");
-      preloader.classList.add("hide");
+     preloader.classList.add("hide");
       setTimeout(() => {
         preloader.style.display = "none";
       }, 500); 
     }, 3000);
   });
+
+
+
   // Login Page
   function validateLogin() {
     const username = document.getElementById("username").value;
@@ -31,9 +38,9 @@
   document.addEventListener("DOMContentLoaded", () => {
     const filterButtons = document.querySelectorAll("[data-filter]");
     const cards = document.querySelectorAll("[data-category]");
-  
+     
     filterButtons.forEach(button => {
-      button.addEventListener("click", () => {
+       button.addEventListener("click", () => {
         const selectedCategory = button.getAttribute("data-filter");
         filterButtons.forEach(btn=>btn.classList.remove("active"));
           button.classList.add("active");
@@ -48,5 +55,6 @@
       });
     });
   });
+  
   
 
