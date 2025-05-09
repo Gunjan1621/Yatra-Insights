@@ -5,7 +5,7 @@ body {
     font-family: Gradute, Arial;
 }
 
-h1 ,h2 ,h3 , p{
+h1 ,h2 ,h3 ,h4 , p{
     margin: 0;
     padding: 0;
 }
@@ -351,11 +351,10 @@ nav {
     margin-top: 50px;
     margin-bottom: 50px;
     border-radius: 10px;
-    
 }
 .destination{
     padding: 2rem 15%;
-   margin: 50px auto;
+    margin: 50px auto;
     background-color: #f8f0ea;
     position: relative;
 }
