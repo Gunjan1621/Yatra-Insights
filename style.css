@@ -653,7 +653,7 @@ nav {
 /*Footer*/
 
 footer{
-    width: 100vw;
+    width: 100%;
 }
 .footer-container{ 
     padding: 100px 15%;

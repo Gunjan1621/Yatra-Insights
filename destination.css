@@ -1,20 +1,21 @@
 /*General CSS*/
-body {
+body{
     margin: 0;
     padding: 0;
     font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
 }
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
+p{
     margin: 0;
     padding: 0;
 }
+
 
 /* Navbar */
 
@@ -25,7 +26,7 @@ nav {
     text-align: center;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-top: 0.5px solid rgba(255, 255, 255, 0.2);
-    background: #e8bfa1;
+    background: #bd6c46;
     height: 45px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
     color: white;
@@ -37,7 +38,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 320px;
+    gap: 220px;
 
 }
 
@@ -58,7 +59,7 @@ nav {
     position: absolute;
     left: 0;
     bottom: -3px;
-    background: linear-gradient(to right, #f4c430, #e67e22, #4169e1);
+    background: linear-gradient(to right, #800000, #be4444);
     width: 100%;
     height: 2px;
     transform: scaleX(0);
@@ -70,7 +71,7 @@ nav {
 }
 
 .nav .middle-section a:hover {
-    background: linear-gradient(to right, #f4c430, #e67e22, #4169e1);
+    background: linear-gradient(to right, #8f0202, #be4444);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,7 +185,7 @@ input[type="radio"] {
 .thumbnails {
     position: absolute;
     top: 2%;
-    left: 75%;
+    left: 70%;
     display: flex;
     flex-direction: column;
     z-index: 2;
@@ -280,7 +281,7 @@ input[type="radio"] {
     display: flex;
     position: relative;
     margin: -15px auto 20px auto;
-    width: 90%;
+    width: 95%;
     background-color: white;
     border: 2px solid #ddd;
     padding: 0px;
@@ -294,7 +295,8 @@ input[type="radio"] {
 }
 
 .map-info {
-    padding: 40px 50px;
+    padding: 40px 30px;
+    
 }
 
 .map-info h2 {
@@ -305,7 +307,7 @@ input[type="radio"] {
 }
 
 .btv-info {
-    width: 800px;
+    width:680px;
     padding: 30px;
     border-radius: 6px;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
@@ -373,7 +375,7 @@ input[type="radio"] {
     background-image: url('img/taj-back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
     box-sizing: border-box;
     position: relative;
@@ -383,7 +385,7 @@ input[type="radio"] {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     background-size: contain;
     background-color: rgba(255, 255, 255, 0.6);
     display: flex;
@@ -403,8 +405,7 @@ input[type="radio"] {
     font-size: 18px;
     font-weight: 500;
     line-height: 28px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 /*Food & Culture Container*/
 
@@ -412,7 +413,7 @@ input[type="radio"] {
     margin: 80px 0px;
     display: flex;
     justify-content: center;
-    height: 75vh;
+    height: 90vh;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 .food-img-container , .c-img-container{
@@ -510,11 +511,12 @@ input[type="radio"] {
 /*Footer*/
 
 footer {
-    width: 100vw;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .footer-container {
-    padding: 100px 15%;
+    padding: 80px 10%;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
     background: linear-gradient(to top, #d09c7b, #e8bfa1);
 }
@@ -620,3 +622,82 @@ footer {
 .col-3:hover svg {
     transform: scale(1.15);
 }
+
+.card-item{
+    color: #fff;
+    user-select: none;
+    transform: translateY(0);
+    border-radius: 20px;
+    transition: all 0.3 ease-in;
+}
+.card-item:hover{
+    transform: translateY(-20px) !important;
+    box-shadow: 4px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.card-item img{
+    width: 100%;
+    height: 375px;
+    position: relative;
+    border-radius: 1rem;
+}
+
+.card-data{
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius:1rem;
+    bottom: 3px;
+    background: linear-gradient(180deg,hsla(0,48%,59%,0)0,rgba(0,0,0,.7)40%);
+}
+.card-data h2{
+    position: absolute;
+    bottom: 30px;
+    left: 80px;
+    right: 50px;
+}
+.slider-wrapper{
+    width: 1300px;
+    margin: 25px 70px 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   height: 100%;
+    
+}
+.subheading{
+    color: rgba(0,0,0,0.4);
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    position: relative;
+}
+.subheading::before,
+.subheading::after {
+  content: "";
+  height: 2px;
+  width: 40px;
+  background: rgba(0, 0, 0, 0.4);
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+
+.cutout-text {
+  font-size: 60px;
+  font-weight: bold;
+  color: #f56502;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.slider-wrapper .swiper-pagination-bullet{
+    background: #1b1b1b;
+    height: 15px;
+    width: 15px;
+}
+
+
