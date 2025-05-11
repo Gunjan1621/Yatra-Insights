@@ -20,6 +20,12 @@ const swiper = new Swiper('.slider-wrapper', {
         },
         1024:{
             slidesPerView:4
+        },
+        1400:{
+            slidesPerView:5
+        },
+        1920:{
+          slidesPerView:6
         }
 
     }
