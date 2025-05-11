@@ -671,6 +671,12 @@ footer {
     .slider-wrapper{
         width: 1580px;
     }
+    .subheading{
+        margin-right: 200px;
+    }
+    .cutout-text{
+        margin-right: 200px;
+    }
 }
 .subheading{
     color: rgba(0,0,0,0.4);
