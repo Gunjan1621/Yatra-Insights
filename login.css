@@ -1,80 +1,95 @@
 /*Login-Page CSS*/
-body{
+body {
     margin: 0;
     padding: 0;
     background: #f6f7fc;
 }
-h1 , p{
+
+h1,
+p {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-image: url('img/main.png');
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    height : 16vh;
+    height: 16vh;
 }
-.login-body{
+
+.login-body {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 7.5rem;
 }
-.login-card{
+
+.login-card {
     display: flex;
     flex-direction: column;
-    width:350px;
-    border : none;
-    padding: 32px;
+    width: 21.875rem;
+    border: none;
+    padding: 2rem;
     background-color: white;
-    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
-.heading{
-    margin-bottom: 32px;
+
+.heading {
+    margin-bottom: 2rem;
     text-align: center;
 }
-.login-details-container p{
-    font-size: 16px;
-    margin-bottom: 8px;
+
+.login-details-container p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
     font-weight: 500;
 }
-.login-details-container input{
+
+.login-details-container input {
     background-color: #f0f0f0;
-    border : none;
+    border: none;
     outline: none;
-    width : 334px;
-    padding: 12px 8px;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    width: 20.875rem;
+    padding: 0.75rem 0.5rem;
+    border-radius: 0.25rem;
+    margin-bottom: 0.5rem;
 }
-.container{
+
+.container {
     display: flex;
     align-items: center;
 }
-.container p{
-    margin : 8px 126px 8px 2px;
+
+.container p {
+    margin: 0.25rem 7.5rem 0.25rem 0.125rem;
 }
-.container a{
-    color : skyblue;
+
+.container a {
+    color: skyblue;
 }
-.container a:hover{
-    color : red;
+
+.container a:hover {
+    color: red;
     text-decoration: none;
 }
-.login-btn{
+
+.login-btn {
     background-color: skyblue;
-    border : none;
-    margin-top: 32px;
-    padding : 12px 28px;
-    border-radius: 4px;
-    margin-left: 130px;
+    border: none;
+    margin-top: 2rem;
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.25rem;
+    margin-left: 8.125rem;
     cursor: pointer;
 }
-.login-btn:hover{
-    background-color: #5ca9e9 ;
+
+.login-btn:hover {
+    background-color: #5ca9e9;
 }
-.login-message{
+
+.login-message {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 1rem;
     font-weight: bold;
 }
