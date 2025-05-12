@@ -385,19 +385,22 @@ nav {
 /*Destination*/
 
 #destinations {
-    max-width: 1500px;
+    max-width: 2000px;
     text-align: center;
-    padding: 40px 20px;
-    border-radius: 0.625rem;
+
 }
 
 .destination {
     padding: 2rem 15%;
-    margin: 3.125rem auto;
+    margin: 3.125rem 5%;
     background-color: #f8f0ea;
     position: relative;
 }
-
+@media(min-width:1024px){
+    .destination{
+        padding: 2rem 9%;
+    }
+}
 .des-heading,
 .d-description {
     text-align: center;
@@ -533,15 +536,13 @@ nav {
 /* Reviews */
 
 #testimonial-section {
-    max-width: 1500px;
+    max-width: 2000px;
     text-align: center;
-    margin: 100px auto;
-    padding: 40px 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 3.125rem 4%;
+    padding: 2rem;
 }
 
 .vv-heading{
