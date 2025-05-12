@@ -173,6 +173,10 @@ nav {
     font-size: 4.75rem;
     font-weight: bold;
 }
+.aj-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
 
 .sub-title {
     font-size: 2.25rem;
@@ -378,8 +382,27 @@ input[type="radio"] {
 
 /*Overview & Tips*/
 
-.overview-tips-container {
-    background-image: url('img/taj-back.jpg');
+.overview-tips-taj-container {
+    background-image: url('h-img/taj-back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.overview-tips-hampi-container {
+    background-image: url('h-img/hampi-backdrop2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.overview-tips-ajanta-container {
+    background-image: url('h-img/ajantaellora-back.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
