@@ -425,12 +425,18 @@ input[type="radio"] {
     font-weight: 800;
 }
 
-.overview p,
-.tips-container p {
+.overview p
+ {
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5rem;
     margin-bottom: 0.5rem;
+}
+.tips-container p{
+       font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin-bottom: 0.625rem;
 }
 
 /*Food & Culture Container*/
@@ -462,7 +468,7 @@ input[type="radio"] {
 .fnc-info p {
     font-size: 1.125rem;
     font-weight: 500;
-    line-height: 1.75rem;
+    line-height: 1.65rem;
     letter-spacing: 1px;
     margin-bottom: 1.25rem;
     text-align: justify;
