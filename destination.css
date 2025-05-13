@@ -404,6 +404,9 @@ input[type="radio"] {
 .manali{
     background-image: url('hs-img/manali-backphoto.jpg');
 }
+.munnar{
+    background-image: url('hs-img/munnar2.jpg');
+}
 .overlay {
     position: absolute;
     top: 0;
