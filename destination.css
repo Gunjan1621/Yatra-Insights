@@ -407,6 +407,9 @@ input[type="radio"] {
 .munnar{
     background-image: url('hs-img/munnar2.jpg');
 }
+.darjeeling{
+    background-image: url('hs-img/darjeeling-backdrop.jpg');
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -488,6 +491,11 @@ input[type="radio"] {
 .f-img {
     height: 100%;
     width: 100%;
+}
+@media(min-width:1400px){
+    .fnc-container{
+        height: 80vh;
+    }
 }
 
 /*How to get*/
