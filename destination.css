@@ -177,7 +177,9 @@ nav {
     font-size: 4rem;
     font-weight: bold;
 }
-
+.kazi{
+    font-size: 3.75rem;
+}
 .sub-title {
     font-size: 2.25rem;
 }
@@ -409,6 +411,9 @@ input[type="radio"] {
 }
 .darjeeling{
     background-image: url('hs-img/darjeeling-backdrop.jpg');
+}
+.kaziranga{
+    background-image: url('w-img/kaziranga22.jpg');
 }
 .overlay {
     position: absolute;
