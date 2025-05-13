@@ -433,12 +433,19 @@ input[type="radio"] {
     margin-bottom: 0.5rem;
 }
 .tips-container p{
-       font-size: 1.125rem;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.75rem;
-    margin-bottom: 0.625rem;
+    margin-bottom:0.5rem;
 }
-
+@media(min-width:1400px){
+    .overview-tips-container{
+        height: 80vh;
+    }
+    .overlay{
+        height: 80vh;
+    }
+}
 /*Food & Culture Container*/
 
 .fnc-container {
