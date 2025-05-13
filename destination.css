@@ -297,7 +297,9 @@ input[type="radio"] {
     height: 25rem;
     width: 37.5rem;
 }
-
+.manali-map{
+    height: 26.5rem;
+}
 .map-info {
     padding: 2.5rem;
 
@@ -382,35 +384,26 @@ input[type="radio"] {
 
 /*Overview & Tips*/
 
-.overview-tips-taj-container {
+.overview-tips-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+}
+.taj{
     background-image: url('h-img/taj-back.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
 }
-
-.overview-tips-hampi-container {
+.hampi{
     background-image: url('h-img/hampi-backdrop2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
 }
-.overview-tips-ajanta-container {
+.ajanta{
     background-image: url('h-img/ajantaellora-back.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: relative;
 }
-
+.manali{
+    background-image: url('hs-img/manali-backphoto.jpg');
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -437,7 +430,7 @@ input[type="radio"] {
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5rem;
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.5rem;
 }
 .tips-container p{
        font-size: 1.125rem;
