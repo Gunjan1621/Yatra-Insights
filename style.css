@@ -879,7 +879,7 @@ footer {
 .col-3:hover svg {
     transform: scale(1.15);
 }
-.rot-container{
+#rot-container{
     max-width: 2000px;
      display: flex;
     flex-direction: column;
@@ -925,7 +925,7 @@ footer {
 .btnn{
     position: absolute;
     bottom: -50px;
-    background: crimson;
+    background: #a85b36;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -933,7 +933,7 @@ footer {
     cursor: pointer;
 }
 .btnn:hover{
-    background: rgb(173, 32, 60);
+    background: #964f2e;
 }
 #prev{
     left: 20%;
