@@ -344,7 +344,8 @@ input[type="radio"] {
 }
 
 .btv-info p {
-    font-size: 1.125rem;
+    font-size: 
+    1.125rem;
     font-weight: 400;
     letter-spacing: 1px;
 }
@@ -495,9 +496,9 @@ input[type="radio"] {
 .fnc-info p {
     font-size: 1.125rem;
     font-weight: 500;
-    line-height: 1.65rem;
+    line-height: 1.75rem;
     letter-spacing: 1px;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     text-align: justify;
 }
 
