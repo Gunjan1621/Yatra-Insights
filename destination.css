@@ -177,7 +177,7 @@ nav {
     font-size: 4rem;
     font-weight: bold;
 }
-.kazi , .jim-title, .sundarban-title{
+.kazi , .jim-title, .sundarban-title, .vof{
     font-size: 3.75rem;
 }
 .sub-title {
@@ -420,6 +420,9 @@ input[type="radio"] {
 }
 .sundarban{
     background-image: url('w-img/sundarbans_deer.jpg');
+}
+.voftrek{
+    background-image: url('trek-img/vof1.jpg');
 }
 .overlay {
     position: absolute;
