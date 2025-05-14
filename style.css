@@ -73,7 +73,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20rem;
+    gap: 10rem;
 }
 
 .nav a {
