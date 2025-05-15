@@ -1,415 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jim Corbett</title>
-    <link rel="stylesheet" href="destination.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
-  </head>
 
-  <body>
-    <header>
-      <nav>
-        <div class="left-section">
-          <img src="img/logoyi.png" class="logo" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jim Corbett</title>
+  <link rel="stylesheet" href="destination.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left-section">
+        <img src="img/logoyi.png" class="logo" />
+      </div>
+      <input type="checkbox" id="menu" />
+      <label for="menu" class="ham">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="nav">
+        <div class="middle-section">
+          <a href="index.html">Home</a>
+          <a href="index.html#aboutindia">India Unvieled</a>
+          <a href="index.html#rot-container">Gallery</a>
+          <a href="index.html#destinations">Destinations</a>
+          <a href="index.html#testimonial-section">Visitor's Voice</a>
+          <a href="index.html#contact-form">Contact Us</a>
         </div>
-        <input type="checkbox" id="menu" />
-        <label for="menu" class="ham">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-        <div class="nav">
-          <div class="middle-section">
-            <a href="index.html">Home</a>
-            <a href="index.html#aboutindia">India Unvieled</a>
-             <a href="index.html#rot-container">Gallery</a>
-            <a href="index.html#destinations">Destinations</a>
-            <a href="index.html#testimonial-section">Visitor's Voice</a>
-            <a href="index.html#contact-form">Contact Us</a>
+        <div class="right-section">
+          <a href="login.html"><i class="fas fa-sign-out fa-lg"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="des-detailed-info">
+    <div class="des-container">
+      <div class="img-map-container">
+        <div class="slider">
+          <div class="img-header">
+            <h1 class="title jim-title">JIM CORBETT NATIONAL PARK</h1>
+            <h4 class="sub-title">
+              <span>
+                <svg class="loc-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path fill="#ffffff"
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+                </svg> </span>Uttarakhand
+            </h4>
           </div>
-          <div class="right-section">
-            <a href="login.html"><i class="fas fa-sign-out fa-lg"></i></a>
+          <input type="radio" name="slider" id="img1" checked />
+          <input type="radio" name="slider" id="img2" />
+          <input type="radio" name="slider" id="img3" />
+          <input type="radio" name="slider" id="img4" />
+          <div class="thumbnails">
+            <label for="img1"><img src="w-img/jim1.jpg" alt="thumb1" /></label>
+            <label for="img2"><img src="w-img/corbett-road-res-jim2.webp" alt="thumb2" /></label>
+            <label for="img3"><img src="w-img/Page-Banner-scaled-jim6.webp" alt="thumb3" /></label>
+            <label for="img4"><img src="w-img/jim11.avif" alt="thumb4" /></label>
+          </div>
+          <div class="main-imgs">
+            <img src="w-img/jim1.jpg" class="img main" id="main1" />
+            <img src="w-img/corbett-road-res-jim2.webp" class="img main" id="main2" />
+            <img src="w-img/Page-Banner-scaled-jim6.webp" class="img main" id="main3" />
+            <img src="w-img/jim11.avif" class="img main" id="main4" />
+            <div class="arrows">
+              <label for="img4" class="arrow left prev1">&#8592;</label>
+              <label for="img1" class="arrow left prev2">&#8592;</label>
+              <label for="img2" class="arrow left prev3">&#8592;</label>
+              <label for="img3" class="arrow left prev4">&#8592;</label>
+
+              <label for="img2" class="arrow right next1">&#8594;</label>
+              <label for="img3" class="arrow right next2">&#8594;</label>
+              <label for="img4" class="arrow right next3">&#8594;</label>
+              <label for="img1" class="arrow right next4">&#8594;</label>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-
-    <section id="des-detailed-info">
-      <div class="des-container">
-        <div class="img-map-container">
-          <div class="slider">
-            <div class="img-header">
-              <h1 class="title jim-title">JIM CORBETT NATIONAL PARK</h1>
-              <h4 class="sub-title">
-                <span>
-                  <svg
-                    class="loc-pin"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 384 512"
-                  >
-                    <path
-                      fill="#ffffff"
-                      d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
-                    />
-                  </svg> </span
-                >Uttarakhand
-              </h4>
-            </div>
-            <input type="radio" name="slider" id="img1" checked />
-            <input type="radio" name="slider" id="img2" />
-            <input type="radio" name="slider" id="img3" />
-            <input type="radio" name="slider" id="img4" />
-            <div class="thumbnails">
-              <label for="img1"><img src="w-img/jim1.jpg" alt="thumb1" /></label>
-              <label for="img2"><img src="w-img/corbett-road-res-jim2.webp" alt="thumb2" /></label>
-              <label for="img3"><img src="w-img/Page-Banner-scaled-jim6.webp" alt="thumb3" /></label>
-              <label for="img4"><img src="w-img/jim11.avif" alt="thumb4" /></label>
-            </div>
-            <div class="main-imgs">
-              <img src="w-img/jim1.jpg" class="img main" id="main1" />
-              <img src="w-img/corbett-road-res-jim2.webp" class="img main" id="main2" />
-              <img src="w-img/Page-Banner-scaled-jim6.webp" class="img main" id="main3" />
-              <img src="w-img/jim11.avif" class="img main" id="main4" />
-              <div class="arrows">
-                <label for="img4" class="arrow left prev1">&#8592;</label>
-                <label for="img1" class="arrow left prev2">&#8592;</label>
-                <label for="img2" class="arrow left prev3">&#8592;</label>
-                <label for="img3" class="arrow left prev4">&#8592;</label>
-
-                <label for="img2" class="arrow right next1">&#8594;</label>
-                <label for="img3" class="arrow right next2">&#8594;</label>
-                <label for="img4" class="arrow right next3">&#8594;</label>
-                <label for="img1" class="arrow right next4">&#8594;</label>
-              </div>
-            </div>
-          </div>
-          <div class="map-container">
-            <iframe class="map-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26389.353870550043!2d78.87484220823004!3d29.563522164912627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a24ffffffffff%3A0x3017b72d3d253fd7!2sJim%20Corbett%20National%20Park!5e1!3m2!1sen!2sin!4v1747204166285!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="map-info">
+        <div class="map-container">
+          <iframe class="map-img"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26389.353870550043!2d78.87484220823004!3d29.563522164912627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390a24ffffffffff%3A0x3017b72d3d253fd7!2sJim%20Corbett%20National%20Park!5e1!3m2!1sen!2sin!4v1747204166285!5m2!1sen!2sin"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-info">
+            <div class="btv-heading">
               <h2>Best Time To Visit</h2>
-              <div class="btv-info">
-                <div class="season peak">
-                  <h3>OCT-FEB</h3>
-                  <p>Peak Season</p>
-                </div>
-                <div class="season moderate">
-                  <h3>JUN-SEP</h3>
-                  <p>Moderate Season</p>
-                </div>
-                <div class="season off">
-                  <h3>MAR-MAY</h3>
-                  <p>Off-Season</p>
-                </div>
+              <i class="fa fa-calendar" style="font-size:38px"></i>
+            </div>
+            <div class="btv-info">
+              <div class="season peak">
+                <h3>OCT-FEB</h3>
+                <p>Peak Season</p>
               </div>
-              <h3 class="ls">
-                <span>Languages Spoken : </span>Kumaoni(Local), Hindi , English
-              </h3>
-              <h3 class="reg"><span>Region : </span>Northern India</h3>
-            </div>
-          </div>
-        </div>
-        <div class="overview-tips-container jim-corbett">
-          <div class="overlay">
-            <div class="overview">
-              <h1>Overview</h1>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-                ratione provident suscipit aliquam quas a nisi impedit dolores
-                autem maiores minus tempore fugiat iusto blanditiis odio
-                quibusdam sequi, consequatur aperiam ducimus? Dolores ullam
-                unde, quod reprehenderit fugit ratione libero impedit corporis,
-                illo, sit officiis iste! Tenetur, architecto delectus? Sapiente
-                repudiandae alias praesentium delectus, nihil porro velit vel
-                sint eveniet animi corporis atque expedita provident nisi
-                explicabo, deleniti consequuntur. Magni vero ad sit repudiandae
-                fuga explicabo itaque neque harum eveniet nihil iure in qui unde
-                tempore, tempora odio? Unde fuga eaque, magni ab ipsam id
-                exercitationem voluptate maiores pariatur aliquam, minus a,
-                nesciunt fugit. Fugit commodi quis, dolorem amet ea temporibus
-                blanditiis rem reiciendis sit delectus repudiandae? Sunt ad hic,
-                recusandae saepe nobis impedit quo aperiam vel ab nemo! Nulla
-                sit, reiciendis labore quasi cupiditate repellat eligendi minus,
-                laudantium quas ea, aliquam voluptates fugit. Tenetur voluptatem
-                necessitatibus minus, praesentium aut commodi vero, obcaecati ut
-                est unde eaque repellendus deserunt quia rem natus nihil facilis
-                at iure! Asperiores voluptates a suscipit tempore. Veniam,
-                recusandae nostrum! Quasi, ipsum nobis voluptatum omnis, eos
-                odit velit et dolorem esse exercitationem facere rerum illum
-                iusto quas quos inventore architecto minus. Enim dolore
-                consequatur doloribus ipsum fuga.
-              </p>
-            </div>
-            <div class="tips-container">
-              <h1>Safety & Travel Tips</h1>
-              <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Praesentium in animi eaque nemo, fugiat distinctio similique,
-                at, iure commodi quia saepe voluptatibus non cumque repellendus
-                tempora exercitationem culpa. Quo illo, ipsum hic temporibus
-                eius placeat fugiat cumque magnam iusto aperiam corporis
-                commodi, magni natus doloribus? Impedit labore sed facilis
-                laborum nostrum reiciendis est quos, perferendis quod! Veniam
-                quibusdam quasi facilis nobis mollitia quisquam modi? Eum at
-                voluptatum cum eos maxime ipsam ea aliquid nulla officia id
-                itaque, autem culpa quia.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="fnc-container">
-          <div class="c-img-container">
-            <img src="w-img/kumaoni-culture-2.jpg" class="c-img" />
-          </div>
-          <div class="fnc-info">
-            <h1>Culture & Cuisine</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Recusandae vitae ab ex natus eveniet reiciendis, possimus harum
-              expedita voluptatem fugit cum commodi ipsa velit sapiente aliquam
-              totam optio. Dolor, ut voluptates reprehenderit ratione sequi
-              error deserunt animi mollitia totam, aliquam sed repellat nulla
-              itaque quod! Amet obcaecati similique ab iure accusantium
-              reprehenderit. Soluta, amet quas! Aut vitae magni, ea, at
-              asperiores, harum ut rem saepe sed culpa odio! Consectetur tenetur
-              assumenda inventore natus dicta, nobis quas odit, earum
-              repudiandae cupiditate beatae nesciunt nulla, quae velit modi?
-              Amet saepe laudantium repudiandae dolores ullam nostrum sunt,
-              debitis iure dolorum delectus porro reprehenderit?
-            </p>
-          </div>
-          <div class="food-img-container">
-            <img src="w-img/kumaoni-food.jpg" class="f-img" />
-          </div>
-        </div>
-        <div class="how-container">
-          <div class="how-info">
-            <h1>How to get there?</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-              aperiam iure quisquam beatae! Rerum molestias suscipit non sunt.
-              Rem vel aperiam sit assumenda. Eos et reiciendis dolores cum
-              architecto alias?
-            </p>
-          </div>
-          <div class="how-card-container">
-            <div class="how-card">
-              <div class="circle">
-                <div class="by-img-con">
-                  <img src="img/airoplane.png" class="by-img" />
-                </div>
-                <h3>BY AIR</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
-                  eligendi cum delectus veniam libero ad!
-                </p>
+              <div class="season moderate">
+                <h3>JUN-SEP</h3>
+                <p>Moderate Season</p>
+              </div>
+              <div class="season off">
+                <h3>MAR-MAY</h3>
+                <p>Off-Season</p>
               </div>
             </div>
-            <div class="how-card">
-              <div class="circle">
-                <div class="by-img-con">
-                  <img src="img/train.png" class="by-img" />
-                </div>
-                <h3>BY TRAIN</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-                  earum nisi esse nulla itaque odit.
-                </p>
-              </div>
-            </div>
-            <div class="how-card">
-              <div class="circle">
-                <div class="by-img-con">
-                  <img src="img/car.png" class="by-img" />
-                </div>
-                <h3>BY CAR</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Ratione dolore nulla enim molestias, unde totam.
-                </p>
-              </div>
-            </div>
+            <h3 class="ls">
+              <span><i class="fa fa-language"></i> Languages Spoken : </span>Kumaoni ,Hindi ,English
+            </h3>
+            <h3 class="reg"><span><i class="fa-solid fa-map-location-dot"></i> Region : </span>Northern India</h3>
           </div>
         </div>
       </div>
-    </section>
-    <div class="container swiper">
-      <div class="slider-wrapper">
-        <h2 class="subheading">Nearby</h2>
-        <h1 class="cutout-text">Attractions</h1>
+      <div class="overview-tips-container jim-corbett">
+        <div class="overlay">
+          <div class="overview">
+            <h1>🐾Jim Corbett : The Call of the Wild</h1>
+            <p>
+              Nestled in the foothills of the Himalayas in Uttarakhand,<strong> Jim Corbett National Park</strong> is India’s oldest national park and a legendary wildlife sanctuary. Established in 1936, it was the first to come under the Project Tiger initiative and remains one of the best places to spot the elusive <strong>Royal Bengal Tiger</strong> in its natural habitat. Sprawling across over 1,300 sq km of lush forest, grasslands, and riverbanks, the park is a paradise for nature lovers and wildlife photographers alike.</p>
+              <p>
+              Corbett is divided into several zones, including Dhikala, Bijrani, Jhirna, and Dhela, each offering different landscapes and wildlife sightings. Whether it’s watching a herd of elephants near the Ramganga River or catching a glimpse of a leopard in the tall sal forests, every safari is a new adventure. The park is also rich in history, as it was named after legendary conservationist Jim Corbett, who once hunted man-eaters here but later became their fiercest protector. With cozy forest lodges, nature trails, and birdwatching spots, Corbett blends thrill and tranquility like no other.
+            </p>
+          </div>
+          <div class="tips-container">
+            <h1>Wilderness Ready: Travel & Safety Tips</h1>
+            <p>
+              &#8226;<strong> Book Safaris in Advance:- </strong> 
+              Entry into the park is limited per day—book jeep or canter safaris early, especially in peak months
+              (Nov–June).<br>
 
-        <div class="card-list swiper-wrapper">
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/Nainital_Corbett_Falls_Main.jpg"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Corbett Waterfall</h2>
-            </div>
-          </article>
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/Sonanadi-Wildlife-Sanctuary-640x853.jpg"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Sonanadi Wildlife Sanctuary</h2>
-            </div>
-          </article>
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/Girija-Devi-Temple-2.jpg"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Girija Devi Temple</h2>
-            </div>
-          </article>
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/Sitabani-Wildlife-Reserve.webp"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Sitabani Wildlife Reserve</h2>
-            </div>
-          </article>
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/corbett-museum.jpg"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Corbett Museum</h2>
-            </div>
-          </article>
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/nakhuchiyatal.jpg"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Naukuchiatal Lake</h2>
-            </div>
-          </article>
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/nanital.jpeg"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Nanital</h2>
-            </div>
-          </article>
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/bhimtal-lake-nainital.jpg"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Bhimtal Lake</h2>
-            </div>
-          </article>
-          <article class="card-item swiper-slide">
-            <img
-              src="w-img/Ranikhet-9.png"
-              alt="image"
-              class="card-img"
-            />
-            <div class="card-data">
-              <h2>Ranikhet</h2>
-            </div>
-          </article>
+              &#8226;<strong> Dress for the Jungle:- </strong>
+              Wear earthy colors like green, brown, or grey. Full sleeves and pants help protect from sun, insects, and
+              thorny shrubs.<br>
+
+              &#8226;<strong> Avoid Flash Photography:- </strong>
+              Flash can disturb animals—opt for natural light or camera settings suited for wildlife.<br>
+
+              &#8226;<strong> Stay Inside the Vehicle:- </strong>
+              Never try to get out during a safari, even if you spot animals. Respect their space and follow your
+              guide’s instructions at all times.<br>
+
+              &#8226;<strong> Carry Essentials:- </strong>
+              Binoculars, a refillable water bottle, sunscreen, and insect repellent can make your experience more
+              comfortable.<br>
+
+              &#8226;<strong> Respect the Forest Code:- </strong>
+              Don’t litter, make noise, or feed animals. Preserve the park for future generations of wildlife—and
+              visitors.<br>
+            </p>
+          </div>
         </div>
-        <div class="swiper-pagination"></div>
+      </div>
+      <div class="fnc-container">
+        <div class="c-img-container">
+          <img src="w-img/kumaoni-culture-2.jpg" class="c-img" />
+        </div>
+        <div class="fnc-info">
+          <h1>Culture & Cuisine</h1>
+          <p>
+            Jim Corbett isn’t just a nature destination—it’s surrounded by the rich culture of Kumaon. Villages near the park like Ramnagar and Kaladhungi reflect the rustic charm and simplicity of the locals, with mud houses, terraced fields, and folk traditions passed down for generations. The legacy of the legendary hunter and conservationist Jim Corbett is still strong here, especially at the museum dedicated to his life and work.<br>
+            When it comes to food, the region offers hearty and earthy flavors. Try local specialties like <strong>Bhatt ki Churkani</strong> (a black soybean curry), <strong>Aloo Ke Gutke</strong> (spiced potatoes), and <strong>Mandua roti</strong>. Seasonal green vegetables, local pulses, and wood-smoked cooking give Kumaoni food its distinct taste. Wash it down with a glass of Buransh juice (made from rhododendron flowers) or sip on hot chai as the forest hums in the background.
+          </p>
+        </div>
+        <div class="food-img-container">
+          <img src="w-img/kumaoni-food.jpg" class="f-img" />
+        </div>
+      </div>
+      <div class="how-container">
+        <div class="how-info">
+          <h1>How to get there?</h1>
+          <p>
+            Reaching Jim Corbett is easy and scenic, with multiple travel options depending on your starting point and comfort.
+          </p>
+        </div>
+        <div class="how-card-container">
+          <div class="how-card">
+            <div class="circle">
+              <div class="by-img-con">
+                <img src="img/airoplane.png" class="by-img" />
+              </div>
+              <h3>BY AIR</h3>
+              <p>
+                The nearest airport is<strong> Pantnagar Airport </strong>(approx. 80 km), with regular flights from Delhi. Taxis are available to Corbett from the airport.
+              </p>
+            </div>
+          </div>
+          <div class="how-card">
+            <div class="circle">
+              <div class="by-img-con">
+                <img src="img/train.png" class="by-img" />
+              </div>
+              <h3>BY TRAIN</h3>
+              <p>
+               <strong> Ramnagar Railway Station</strong> is just 12 km from the park and well-connected to Delhi and other North Indian cities. It’s the most convenient entry point.
+              </p>
+            </div>
+          </div>
+          <div class="how-card">
+            <div class="circle">
+              <div class="by-img-con">
+                <img src="img/car.png" class="by-img" />
+              </div>
+              <h3>BY CAR</h3>
+              <p>
+                 Jim Corbett is around<strong> 240 km </strong>from Delhi, and the drive takes<strong> 5–6 hours</strong>. Regular buses and taxis are available from Delhi, Nainital, and Haldwani.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+  <div class="container swiper">
+    <div class="slider-wrapper">
+      <h2 class="subheading">Nearby</h2>
+      <h1 class="cutout-text">Attractions</h1>
 
-    <footer>
-      <div class="footer-container">
-        <div class="row">
-          <div class="col-1">
-            <h3>USEFUL LINKS</h3>
-            <a href="#landingpage">Home</a>
-            <a href="#aboutindia">India Unvieled</a>
-            <a href="#destinations">Destinations</a>
-            <a href="#testimonial-section">Visitor's Voice</a>
-            <a href="#contact-form">Contact Us</a>
+      <div class="card-list swiper-wrapper">
+        <article class="card-item swiper-slide">
+          <img src="w-img/Nainital_Corbett_Falls_Main.jpg" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -20px;">Corbett Waterfall</h2>
           </div>
-          <div class="col-2">
-            <h3>NEWSLETTER</h3>
-            <input
-              class="newsletter-input"
-              type="text"
-              placeholder="Your E-mail Address"
-            />
-            <button class="sub-btn">Subscribe Now</button>
+        </article>
+        <article class="card-item swiper-slide">
+          <img src="w-img/Sonanadi-Wildlife-Sanctuary-640x853.jpg" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -25px;">Sonanadi Wildlife Sanctuary</h2>
           </div>
-          <div class="col-3">
-            <h3>SOCIAL LINKS</h3>
-            <svg
-              class="svg-logo"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path
-                fill="#2c2c2c"
-                d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"
-              />
-            </svg>
-            <svg
-              class="svg-logo"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 512 512"
-            >
-              <path
-                fill="#2c2c2c"
-                d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
-              />
-            </svg>
-            <svg
-              class="svg-logo"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path
-                fill="#2c2c2c"
-                d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"
-              />
-            </svg>
-            <svg
-              class="svg-logo"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 448 512"
-            >
-              <path
-                fill="#2c2c2c"
-                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-              />
-            </svg>
+        </article>
+        <article class="card-item swiper-slide">
+          <img src="w-img/Girija-Devi-Temple-2.jpg" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -25px;">Girija Devi Temple</h2>
           </div>
+        </article>
+        <article class="card-item swiper-slide">
+          <img src="w-img/Sitabani-Wildlife-Reserve.webp" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -25px;">Sitabani Wildlife Reserve</h2>
+          </div>
+        </article>
+        <article class="card-item swiper-slide">
+          <img src="w-img/corbett-museum.jpg" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -25px;">Corbett Museum</h2>
+          </div>
+        </article>
+        <article class="card-item swiper-slide">
+          <img src="w-img/nakhuchiyatal.jpg" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -25px;">Naukuchiatal Lake</h2>
+          </div>
+        </article>
+        <article class="card-item swiper-slide">
+          <img src="w-img/nanital.jpeg" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -25px;">Nanital</h2>
+          </div>
+        </article>
+        <article class="card-item swiper-slide">
+          <img src="w-img/bhimtal-lake-nainital.jpg" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -25px;">Bhimtal Lake</h2>
+          </div>
+        </article>
+        <article class="card-item swiper-slide">
+          <img src="w-img/Ranikhet-9.png" alt="image" class="card-img" />
+          <div class="card-data">
+            <h2 style="text-align: center; margin-left: -25px;">Ranikhet</h2>
+          </div>
+        </article>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="row">
+        <div class="col-1">
+          <h3>USEFUL LINKS</h3>
+          <a href="index.html">Home</a>
+          <a href="index.html#aboutindia">India Unvieled</a>
+          <a href="index.html#rot-container">Gallery</a>
+          <a href="index.html#destinations">Destinations</a>
+          <a href="index.html#testimonial-section">Visitor's Voice</a>
+          <a href="index.html#contact-form">Contact Us</a>
+        </div>
+        <div class="col-2">
+          <h3>NEWSLETTER</h3>
+          <input class="newsletter-input" type="text" placeholder="Your E-mail Address" />
+          <button class="sub-btn">Subscribe Now</button>
+        </div>
+        <div class="col-3">
+          <h3>SOCIAL LINKS</h3>
+          <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#2c2c2c"
+              d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z" />
+          </svg>
+          <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path fill="#2c2c2c"
+              d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+          </svg>
+          <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#2c2c2c"
+              d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z" />
+          </svg>
+          <svg class="svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="#2c2c2c"
+              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+          </svg>
         </div>
       </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="attraction.js"></script>
-    <script src="script.js"></script>
-  </body>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="attraction.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>

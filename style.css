@@ -632,6 +632,9 @@ nav {
     color: #f4c542;
     font-size: 18px;
 }
+
+/* FAQ */
+
 #faq{
     background: #eceaea;
     padding: 30px 20px;
@@ -678,13 +681,13 @@ nav {
     align-items: center;
     font-size: 18px;
     font-weight: 500;
-    color: dodgerblue;
+    color: #D96C3B;
     cursor: pointer;
 }
 #accordion li label span{
      transform: rotate(90deg);
      font-size: 22px;
-     color: dodgerblue;
+     color: #D96C3B;
 }
 #accordion label + input[type="radio"]{
     display: none;
