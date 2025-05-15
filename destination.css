@@ -629,7 +629,6 @@ input[type="radio"] {
     align-items: center;
     flex-direction: column;
     height: 100%;
-
 }
 
 @media(min-width:1400px) {
