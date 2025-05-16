@@ -1,8 +1,9 @@
 /*General CSS*/
+
 body {
     margin: 0;
     padding: 0;
-    font-family: Montserrat, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
 }
 
@@ -401,13 +402,13 @@ input[type="radio"] {
     position: relative;
 }
 .taj{
-    background-image: url('h-img/taj-back.jpg');
+    background-image: url('h-img/taj-background.jpg');
 }
 .hampi{
-    background-image: url('h-img/hampi-backdrop2.jpg');
+    background-image: url('h-img/hampi-backdrop.jpg');
 }
 .ajanta{
-    background-image: url('h-img/ajantaellora-back.jpg');
+    background-image: url('h-img/ajanta-back.jpg');
 }
 .manali{
     background-image: url('hs-img/manali-backphoto.jpg');
@@ -444,6 +445,15 @@ input[type="radio"] {
 }
 .varanasi{
     background-image: url('p-img/varanasi2.jpg');
+}
+.varkala{
+    background-image: url('b-img/varakala1.jpg');
+}
+.palolem{
+    background-image: url('b-img/palolem5.jpg');
+}
+.radhanagar{
+    background-image: url('b-img/radhanagar9.jpg');
 }
 .overlay {
     position: absolute;
