@@ -379,7 +379,11 @@ section{
 }
 @media(min-width:1400px){
     #home{
-        width:100%;
+        width:74%;
+        height: 73vh;
+    }
+    .slider-navigation{
+        margin-bottom: -10rem;
     }
 }
 #home:before{
@@ -564,9 +568,13 @@ section{
     text-align: center;
     margin-top: 1rem;
     margin-left: -130px;
-
 }
-
+@media(min-width:1400px){
+   #destinations {
+    width : 80vw;
+    margin-left: -50px;
+   }
+}
 .destination {
     padding: 2rem 5rem;
     background-color: #f8f0ea;
@@ -881,7 +889,7 @@ section{
     justify-content: center;
     background: #f9f9f9;
     padding: 2rem;
-    margin-top: -7rem;
+    margin-top: -4rem;
 }
 
 .contact-form-heading h1 {
