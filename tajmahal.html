@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="destination.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -88,22 +88,53 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="map-info">
             <div class="btv-heading">
-                            <h2>Best Time To Visit</h2>
-                            <i class="fa fa-calendar" style="font-size:38px"></i>
-                        </div>
+              <h2>Best Time To Visit</h2>
+              <i class="fa fa-calendar" style="font-size:38px"></i>
+            </div>
             <div class="btv-info">
-              <div class="season peak">
-                <h3>OCT-MAR</h3>
-                <p>Peak Season</p>
-              </div>
-              <div class="season moderate">
-                <h3>APR-JUN</h3>
-                <p>Moderate Season</p>
-              </div>
-              <div class="season off">
-                <h3>JUL-SEP</h3>
-                <p>Off-Season</p>
-              </div>
+            <input type="radio" id="title-1" name="season" checked>
+            <input type="radio" id="title-2" name="season">
+            <input type="radio" id="title-3" name="season">
+            <div class="season-title">
+                <label for="title-1">
+                    <div class="season peak-title">
+                        <h3>OCT-MAR</h3>
+                        <p>Peak Season</p>
+                    </div>
+                </label>
+                <label for="title-2">
+                    <div class="season mod-title">
+                        <h3>APR-JUN</h3>
+                        <p>Moderate Season</p>
+                    </div>
+                </label>
+                <label for="title-3">
+                    <div class="season off-title">
+                        <h3>JUL-SEP</h3>
+                        <p>Off Season</p>
+                    </div>
+                </label>
+            </div>
+            <div class="season-des">
+                <div class="what-to-expect" id="des-1">
+                    <ul>
+                        <li>Plesant Weather</li>
+                        <li>Lots of crowd</li>
+                    </ul>
+                </div>
+                <div class="what-to-expect" id="des-2">
+                    <ul>
+                        <li>Monsoon Weather</li>
+                        <li>Less crowd</li>
+                    </ul>
+                </div>
+                <div class="what-to-expect" id="des-3">
+                    <ul>
+                        <li>Hot Weather</li>
+                        <li>No crowd</li>
+                    </ul>
+                </div>
+            </div>
             </div>
             <h3 class="ls">
               <span><i class="fa fa-language"></i> Languages Spoken : </span>Hindi , English
@@ -137,22 +168,28 @@
           <div class="tips-container">
             <h1>Visiting the Taj: Smart & Safe Travel Tips</h1>
             <p>
-              &#8226;<strong> Visit Early Morning:-</strong> Arrive at sunrise to avoid heavy crowds and enjoy cooler temperatures with ideal
+              &#8226;<strong> Visit Early Morning:-</strong> Arrive at sunrise to avoid heavy crowds and enjoy cooler
+              temperatures with ideal
               lighting for photos. <br>
 
-              &#8226;<strong> Buy Tickets Online:-</strong> Book your entry tickets in advance through the official website to save time and
+              &#8226;<strong> Buy Tickets Online:-</strong> Book your entry tickets in advance through the official
+              website to save time and
               avoid queues. <br>
 
-              &#8226;<strong> Travel Light:-</strong> Only essentials like phones, wallets, and water bottles are allowed inside. Avoid bringing
+              &#8226;<strong> Travel Light:-</strong> Only essentials like phones, wallets, and water bottles are
+              allowed inside. Avoid bringing
               large bags, food, or metal objects. <br>
 
-              &#8226;<strong> Beware of Scams:-</strong> Use only government-approved guides and avoid touts or unofficial vendors near the
+              &#8226;<strong> Beware of Scams:-</strong> Use only government-approved guides and avoid touts or
+              unofficial vendors near the
               monument. <br>
 
-              &#8226;<strong> Use Approved Transport:-</strong> Use battery-operated rickshaws or authorized shuttles from the parking area, as
+              &#8226;<strong> Use Approved Transport:-</strong> Use battery-operated rickshaws or authorized shuttles
+              from the parking area, as
               regular vehicles aren’t allowed near the Taj Mahal. <br>
 
-              &#8226;<strong> Dress Comfortably and Respectfully:-</strong> Wear modest, breathable clothing and comfortable shoes, as you’ll be
+              &#8226;<strong> Dress Comfortably and Respectfully:-</strong> Wear modest, breathable clothing and
+              comfortable shoes, as you’ll be
               walking a lot in the sun and heat.
             </p>
           </div>
@@ -239,6 +276,7 @@
           <img src="h-img/mariyams-tomb-agra-uttar-pradesh-1-attr-nearby.jpg" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Mariyams Tomb</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam inventore velit labore qui sint perferendis dicta dolorem? Doloribus, quis fugit.</p>
           </div>
         </article>
         <article class="card-item swiper-slide">

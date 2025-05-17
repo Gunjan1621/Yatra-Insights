@@ -175,13 +175,18 @@ nav {
     font-weight: bold;
 }
 
-.aj-title{
+.aj-title {
     font-size: 4rem;
     font-weight: bold;
 }
-.kazi , .jim-title, .sundarban-title, .vof{
+
+.kazi,
+.jim-title,
+.sundarban-title,
+.vof {
     font-size: 3.75rem;
 }
+
 .sub-title {
     font-size: 2.25rem;
     font-style: italic;
@@ -302,18 +307,22 @@ input[type="radio"] {
     height: 25rem;
     width: 37.5rem;
 }
+
 .map-info {
-    padding: 2.5rem;
+    padding: 1.75rem 2.75rem;
 }
-.btv-heading{
+
+.btv-heading {
     display: flex;
     align-items: center;
     gap: 16px;
 }
-.btv-heading i{
+
+.btv-heading i {
     line-height: 0;
     margin-top: -8px;
 }
+
 .map-info h2 {
     font-size: 2rem;
     font-weight: bold;
@@ -324,20 +333,116 @@ input[type="radio"] {
 
 .btv-info {
     width: 42rem;
-    padding: 1.75rem;
     border-radius: 0.5rem;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
     display: flex;
-    gap: 5.5rem;
+    flex-direction: column;
     margin-bottom: 1.5rem;
 }
 
 .btv-info h3 {
     font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
 }
 
+.btv-info p {
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.season-title p::before {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 6px;
+    border-radius: 50%;
+    margin-bottom: 2px;
+}
+
+.peak-title p::before {
+    background-color: rgb(51, 209, 143);
+}
+
+.mod-title p::before {
+    background-color: rgb(248, 231, 28);
+}
+
+.off-title p::before {
+    background-color: red;
+}
+.season-des ul{
+  margin: 0;
+  padding: 0;
+  list-style-position: inside; 
+}
+
+.season-des li{
+  margin: 0;
+  padding: 0;
+}
+.season-title {
+    display: flex;
+    padding: 1rem 1rem 0 1rem;
+    gap: 50px;
+}
+.season{
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+#title-1:checked ~.season-title label[for="title-1"],
+#title-2:checked ~.season-title label[for="title-2"],
+#title-3:checked ~.season-title label[for="title-3"]
+{
+    h3{
+        font-weight: 700;
+    }
+    .peak-title p{
+        color: rgb(51, 209, 143);
+    }
+    .mod-title p{
+        color: rgb(248, 231, 28);
+    }
+    .off-title p{
+        color: red;
+    }
+}
+/* For same color line */
+input#title-1:checked ~ .season-title label[for="title-1"] .season,
+input#title-2:checked ~ .season-title label[for="title-2"] .season,
+input#title-3:checked ~ .season-title label[for="title-3"] .season {
+  border-bottom: 4px solid #A0C4FF;
+}
+
+
+/* For different color lines
+input#title-1:checked ~ .season-title label[for="title-1"] .season{
+    border-bottom: 4px solid rgb(51, 209, 143);
+}
+input#title-2:checked ~ .season-title label[for="title-2"] .season{
+    border-bottom: 4px solid rgb(248,231,28);
+}
+input#title-3:checked ~ .season-title label[for="title-3"] .season{
+    border-bottom: 4px solid red;
+}*/
+.season-des{
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    padding: 1rem;
+}
+input[type="radio"] {
+    display: none;
+}
+.what-to-expect {
+    display: none;
+}
+#title-1:checked~.season-des #des-1,
+#title-2:checked~.season-des #des-2,
+#title-3:checked~.season-des #des-3 {
+    display: block;
+}
 .ls,
 .reg {
     font-size: 1.75rem;
@@ -350,47 +455,6 @@ input[type="radio"] {
     color: rgb(255, 101, 68);
 }
 
-.btv-info p{
-    font-size: 1.125rem;
-    font-style: italic;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.btv-info .peak p{
-    color: rgb(51, 209, 143);
-}
-
-.btv-info .moderate p{
-    color: rgb(248, 231, 28);
-}
-
-.btv-info .off p{
-    color: red;
-}
-
-.season p::before {
-    content: " ";
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    margin-right: 6px;
-    border-radius: 50%;
-    margin-bottom: 2px;
-}
-
-.peak p::before {
-    background-color: rgb(51, 209, 143);
-}
-
-.moderate p::before {
-    background-color: rgb(248, 231, 28);
-}
-
-.off p::before {
-    background-color: red;
-}
-
 /*Overview & Tips*/
 
 .overview-tips-container {
@@ -401,60 +465,79 @@ input[type="radio"] {
     box-sizing: border-box;
     position: relative;
 }
-.taj{
+
+.taj {
     background-image: url('h-img/taj-background.jpg');
 }
-.hampi{
+
+.hampi {
     background-image: url('h-img/hampi-backdrop.jpg');
 }
-.ajanta{
+
+.ajanta {
     background-image: url('h-img/ajanta-back.jpg');
 }
-.manali{
+
+.manali {
     background-image: url('hs-img/manali-backphoto.jpg');
 }
-.munnar{
+
+.munnar {
     background-image: url('hs-img/munnar2.jpg');
 }
-.darjeeling{
+
+.darjeeling {
     background-image: url('hs-img/darjeeling-backdrop.jpg');
 }
-.kaziranga{
+
+.kaziranga {
     background-image: url('w-img/kaziranga22.jpg');
 }
-.jim-corbett{
+
+.jim-corbett {
     background-image: url('w-img/jim-back.jpg');
 }
-.sundarban{
+
+.sundarban {
     background-image: url('w-img/sundarbans_deer.jpg');
 }
-.voftrek{
+
+.voftrek {
     background-image: url('trek-img/vof1.jpg');
 }
-.hampta-pass{
+
+.hampta-pass {
     background-image: url('trek-img/Hampta-Pass-Himachal.webp');
 }
-.chadar-trek{
+
+.chadar-trek {
     background-image: url('trek-img/chadar-trek-1.jpg');
 }
-.vaishno-devi{
+
+.vaishno-devi {
     background-image: url('p-img/vaishno1.jpg');
 }
-.tirupati-balaji{
+
+.tirupati-balaji {
     background-image: url('p-img/tiru1.jpg');
 }
-.varanasi{
+
+.varanasi {
     background-image: url('p-img/varanasi2.jpg');
 }
-.varkala{
+
+.varkala {
     background-image: url('b-img/varakala1.jpg');
 }
-.palolem{
+
+.palolem {
     background-image: url('b-img/palolem5.jpg');
 }
-.radhanagar{
+
+.radhanagar {
     background-image: url('b-img/radhanagar9.jpg');
 }
+
 .overlay {
     position: absolute;
     top: 0;
@@ -477,27 +560,30 @@ input[type="radio"] {
     font-style: italic;
 }
 
-.overview p
- {
+.overview p {
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5rem;
     margin-bottom: 0.5rem;
 }
-.tips-container p{
+
+.tips-container p {
     font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.75rem;
-    margin-bottom:0.5rem;
+    margin-bottom: 0.5rem;
 }
-@media(min-width:1400px){
-    .overview-tips-container{
+
+@media(min-width:1400px) {
+    .overview-tips-container {
         height: 80vh;
     }
-    .overlay{
+
+    .overlay {
         height: 80vh;
     }
 }
+
 /*Food & Culture Container*/
 
 .fnc-container {
@@ -539,8 +625,9 @@ input[type="radio"] {
     height: 100%;
     width: 100%;
 }
-@media(min-width:1400px){
-    .fnc-container{
+
+@media(min-width:1400px) {
+    .fnc-container {
         height: 80vh;
     }
 }
@@ -626,7 +713,14 @@ input[type="radio"] {
     transform: translateY(-20px) !important;
     cursor: pointer;
 }
-
+.card-item:hover {
+    .card-data h2{
+        transform: translateY(-80px);
+    }
+    .card-data p{
+        opacity : 1;
+    }
+}
 .card-item img {
     width: 100%;
     height: 375px;
@@ -650,7 +744,14 @@ input[type="radio"] {
     left: 80px;
     right: 50px;
 }
-
+.card-data p{
+    position: absolute;
+    bottom : 0.875rem;
+    left : 1rem;
+    right : 1rem;
+    text-align: justify;
+    opacity: 0;
+}
 .slider-wrapper {
     width: 1300px;
     margin: 25px 70px 55px;
