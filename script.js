@@ -86,6 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+// Rotating Image
 const imageContainer=document.querySelector(".rot-img-container");
 const prev=document.getElementById("prev");
 const next=document.getElementById("next");
@@ -101,6 +102,7 @@ next.addEventListener("click",()=>{
 function rotate(){
     imageContainer.style.transform=`perspective(1300px) rotateY(${x}deg)`;
 };
+// Bg Slider
 const btns=document.querySelectorAll(".nav-btn");
 const slides=document.querySelectorAll(".video-slide");
 var sliderNav=function(manual){
