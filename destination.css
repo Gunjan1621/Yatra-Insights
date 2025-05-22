@@ -307,6 +307,9 @@ input[type="radio"] {
     height: 26rem;
     width: 37.5rem;
 }
+.chadar-map-img , .hampta-map-img{
+    height : 27.2rem;
+}
 .vd-map-img {
     height : 28.49rem;
 }
