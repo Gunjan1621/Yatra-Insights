@@ -114,7 +114,7 @@ var sliderNav=function(manual){
     });
     btns[manual].classList.add("active");
     slides[manual].classList.add("active");
-
+  
 }
 btns.forEach((btn,i)=>{
     btn.addEventListener("click",()=>{

@@ -307,7 +307,7 @@ input[type="radio"] {
     height: 26rem;
     width: 37.5rem;
 }
-.chadar-map-img , .hampta-map-img{
+.chadar-map-img , .hampta-map-img, .varkala-map-img{
     height : 27.2rem;
 }
 .vd-map-img {
@@ -631,12 +631,10 @@ input[type="radio"] {
 .f-img {
     height: 100%;
     width: 100%;
-    transition: all 0.4s ease;
-    filter: opacity(0.8);
+    transition: transform 0.4s ease;
 }
 .c-img:hover , .f-img:hover{
     transform: scale(1.1);
-    filter: opacity(1);
 } 
 
 
