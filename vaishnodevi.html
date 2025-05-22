@@ -103,7 +103,7 @@
           </div>
           <div class="map-container">
             <iframe
-              class="map-img"
+              class="map-img vd-map-img"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3344.974665472276!2d74.94675707449906!3d33.030797920975424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391e786b6985aaad%3A0xa04ab611af048191!2sVaishno%20Devi!5e0!3m2!1sen!2sin!4v1747243295981!5m2!1sen!2sin"
               width="600"
               height="450"
@@ -118,19 +118,50 @@
               <i class="fa fa-calendar" style="font-size:38px"></i>
             </div>
               <div class="btv-info">
-                <div class="season peak">
-                  <h3>SEP-NOV</h3>
-                  <p>Peak Season</p>
+              <input type="radio" id="title-1" name="season" checked>
+              <input type="radio" id="title-2" name="season">
+              <input type="radio" id="title-3" name="season">
+              <div class="season-title">
+                <label for="title-1">
+                  <div class="season peak-title">
+                    <h3>OCT-NOV</h3>
+                    <p>Peak Season</p>
+                  </div>
+                </label>
+                <label for="title-2">
+                  <div class="season mod-title">
+                    <h3>DEC-JUN</h3>
+                    <p>Moderate Season</p>
+                  </div>
+                </label>
+                <label for="title-3">
+                  <div class="season off-title">
+                    <h3>JUL-SEP</h3>
+                    <p>Off Season</p>
+                  </div>
+                </label>
+              </div>
+              <div class="season-des">
+                <div class="what-to-expect" id="des-1">
+                  <ul>
+                    <li><strong>What To Expect:</strong> In summer, days are very hot but evenings are cooler.In autumn, days are mildly sunny and night temperatures drop drstically.</li>
+                    <li><strong>Things You'll Love:</strong> Escaping to the pleasantly cool Vaishno Devi caves and Trikuta Hills for a vacation, and enjoying seasonal festivals during autumn.</li>
+                  </ul>
                 </div>
-                <div class="season moderate">
-                  <h3>DEC-JUN</h3>
-                  <p>Moderate Season</p>
+                <div class="what-to-expect" id="des-2">
+                  <ul>
+                    <li><strong>What To Expect:</strong> Sub-zero temperatures with snowfall. Terrain becomes tricky to navigate and yatra should only be undertaken by physically fit pilgrims.</li>
+                    <li><strong>Things You'll Love:</strong> The mystical experience of seeking blessings in the cave while the entire arena look pristine with snow.</li>
+                  </ul>
                 </div>
-                <div class="season off">
-                  <h3>JUL-AUG</h3>
-                  <p>Off-Season</p>
+                <div class="what-to-expect" id="des-3">
+                  <ul>
+                    <li><strong>What To Expect:</strong> Seasonal monsoon rains which might cause mudslides during yatra.However, the rain-drenched city looks remarkable.</li>
+                    <li><strong>Things You'll Love:</strong> Off-season hotel and flight rates, emerald views of the wet city, exploring the waterfalls and the verdant carpet of forests.</li>
+                  </ul>
                 </div>
               </div>
+            </div>
               <h3 class="ls"><span><i class="fa fa-language"></i> Languages Spoken : </span>Dogri(Local), Hindi</h3>
               <h3 class="reg"><span><i class="fa-solid fa-map-location-dot"></i> Region : </span>Northern India</h3>
             </div>
@@ -261,36 +292,42 @@ Devotees often combine travel modes for convenience.
             <img src="p-img/vaina1.jpg" alt="image" class="card-img" />
             <div class="card-data">
               <h2 style="text-align: center; margin-left: -25px;">Dogra Museum</h2>
+              <p> Preserves Jammu’s Dogra culture with rare artifacts, traditional crafts, and historic manuscripts. <br/> &#128205; 14 km </p>
             </div>
           </article>
           <article class="card-item swiper-slide">
             <img src="p-img/vaina2.jpg" alt="image" class="card-img" />
             <div class="card-data">
               <h2 style="text-align: center; margin-left: -25px;">Raghunath Temple</h2>
+              <p>A grand temple complex dedicated to Lord Rama, known for its ornate carvings and spiritual ambiance. <br/> &#128205; 13 km </p>
             </div>
           </article>
           <article class="card-item swiper-slide">
             <img src="p-img/vaina3.jpg" alt="image" class="card-img" />
             <div class="card-data">
               <h2 style="text-align: center; margin-left: -25px">Ramnagar Fort</h2>
+              <p>Majestic 19th-century fort on the Tawi River, reflecting Dogra architecture and royal legacy. <br/> &#128205; 40 km </p>
             </div>
           </article>
           <article class="card-item swiper-slide">
             <img src="p-img/vaina4.jpg" alt="image" class="card-img" />
             <div class="card-data">
               <h2>Mansar Lake</h2>
+              <p>A sacred, scenic lake surrounded by wooded hills, ideal for boating, picnics, and religious offerings. <br/> &#128205; 62 km </p>
             </div>
           </article>
           <article class="card-item swiper-slide">
             <img src="p-img/vaina5.jpg" alt="image" class="card-img" />
             <div class="card-data">
               <h2>Manda Zoo</h2>
+              <p>Small but lush zoological park near Jammu, home to regional wildlife in a natural forest setting.<br/> &#128205; 15 km </p>
             </div>
           </article>
           <article class="card-item swiper-slide">
             <img src="p-img/vaina6.jpg" alt="image" class="card-img" />
             <div class="card-data">
               <h2 style="text-align: center; margin-left: -25px">Ranbireshwar Temple</h2>
+              <p> Famous Shiva temple with giant lingams and thousands of crystal shivalingas drawing devotees.<br/> &#128205; 13 km </p>
             </div>
           </article>
           <article class="card-item swiper-slide">
@@ -299,6 +336,7 @@ Devotees often combine travel modes for convenience.
               <h2 style="text-align: center; margin-left: -25px">
                Mubarak Mandi Palace
               </h2>
+              <p>A heritage palace blending Mughal, Rajasthani, and European styles, offering views of the Tawi River. <br/> &#128205; 14 km </p>
             </div>
           </article>
           <article class="card-item swiper-slide">
@@ -307,12 +345,14 @@ Devotees often combine travel modes for convenience.
               <h2 style="text-align: center; margin-left: -20px">
                 Peer Kho Cave Temple
               </h2>
+              <p>Ancient cave shrine dedicated to Lord Shiva, nestled in sandstone caves along the Tawi River.<br/> &#128205; 13 km </p>
             </div>
           </article>
           <article class="card-item swiper-slide">
             <img src="p-img/vaina9.jpg" alt="image" class="card-img" />
             <div class="card-data">
               <h2 style="text-align: center; margin-left: -25px">Surinsar Lake</h2>
+              <p> A peaceful lake surrounded by forested hills, ideal for relaxing, nature walks, and bird watching. <br/> &#128205; 42 km </p>
             </div>
           </article>
         </div>

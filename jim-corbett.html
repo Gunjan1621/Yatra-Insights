@@ -92,17 +92,48 @@
               <i class="fa fa-calendar" style="font-size:38px"></i>
             </div>
             <div class="btv-info">
-              <div class="season peak">
-                <h3>OCT-FEB</h3>
-                <p>Peak Season</p>
+              <input type="radio" id="title-1" name="season" checked>
+              <input type="radio" id="title-2" name="season">
+              <input type="radio" id="title-3" name="season">
+              <div class="season-title">
+                <label for="title-1">
+                  <div class="season peak-title">
+                    <h3>OCT-FEB</h3>
+                    <p>Peak Season</p>
+                  </div>
+                </label>
+                <label for="title-2">
+                  <div class="season mod-title">
+                    <h3>JUN-SEP</h3>
+                    <p>Moderate Season</p>
+                  </div>
+                </label>
+                <label for="title-3">
+                  <div class="season off-title">
+                    <h3>MAR-MAY</h3>
+                    <p>Off Season</p>
+                  </div>
+                </label>
               </div>
-              <div class="season moderate">
-                <h3>JUN-SEP</h3>
-                <p>Moderate Season</p>
-              </div>
-              <div class="season off">
-                <h3>MAR-MAY</h3>
-                <p>Off-Season</p>
+              <div class="season-des">
+                <div class="what-to-expect" id="des-1">
+                  <ul>
+                    <li><strong>What To Expect:</strong> Pleasant weather with sunny skies. The nights are chilly.</li>
+                    <li><strong>Things You'll Love:</strong> Spotting wild animals and exploring nearby attractions.</li>
+                  </ul>
+                </div>
+                <div class="what-to-expect" id="des-2">
+                  <ul>
+                    <li><strong>What To Expect:</strong> Heavy rainfalls with increased humidity.</li>
+                    <li><strong>Things You'll Love:</strong> Experiencing nature in its true glory.</li>
+                  </ul>
+                </div>
+                <div class="what-to-expect" id="des-3">
+                  <ul>
+                    <li><strong>What To Expect:</strong> Extremely hot weather with relatively low humidity.</li>
+                    <li><strong>Things You'll Love:</strong> Spotting wild animals near water bodies.</li>
+                  </ul>
+                </div>
               </div>
             </div>
             <h3 class="ls">
@@ -119,7 +150,7 @@
             <p>
               Nestled in the foothills of the Himalayas in Uttarakhand,<strong> Jim Corbett National Park</strong> is India’s oldest national park and a legendary wildlife sanctuary. Established in 1936, it was the first to come under the Project Tiger initiative and remains one of the best places to spot the elusive <strong>Royal Bengal Tiger</strong> in its natural habitat. Sprawling across over 1,300 sq km of lush forest, grasslands, and riverbanks, the park is a paradise for nature lovers and wildlife photographers alike.</p>
               <p>
-              Corbett is divided into several zones, including Dhikala, Bijrani, Jhirna, and Dhela, each offering different landscapes and wildlife sightings. Whether it’s watching a herd of elephants near the Ramganga River or catching a glimpse of a leopard in the tall sal forests, every safari is a new adventure. The park is also rich in history, as it was named after legendary conservationist Jim Corbett, who once hunted man-eaters here but later became their fiercest protector. With cozy forest lodges, nature trails, and birdwatching spots, Corbett blends thrill and tranquility like no other.
+              Corbett is divided into several zones, including <strong>Dhikala, Bijrani, Jhirna</strong>, and<strong> Dhela</strong>, each offering different landscapes and wildlife sightings. Whether it’s watching a herd of elephants near the Ramganga River or catching a glimpse of a leopard in the tall sal forests, every safari is a new adventure. The park is also rich in history, as it was named after legendary <strong>conservationist Jim Corbett</strong>, who once hunted man-eaters here but later became their fiercest protector. With cozy forest lodges, nature trails, and birdwatching spots, Corbett blends thrill and tranquility like no other.
             </p>
           </div>
           <div class="tips-container">
@@ -158,7 +189,7 @@
         <div class="fnc-info">
           <h1>Culture & Cuisine</h1>
           <p>
-            Jim Corbett isn’t just a nature destination—it’s surrounded by the rich culture of Kumaon. Villages near the park like Ramnagar and Kaladhungi reflect the rustic charm and simplicity of the locals, with mud houses, terraced fields, and folk traditions passed down for generations. The legacy of the legendary hunter and conservationist Jim Corbett is still strong here, especially at the museum dedicated to his life and work.<br>
+            Jim Corbett isn’t just a nature destination—it’s surrounded by the rich culture of<strong> Kumaon</strong>. Villages near the park like Ramnagar and Kaladhungi reflect the rustic charm and simplicity of the locals, with mud houses, terraced fields, and folk traditions passed down for generations. The legacy of the legendary hunter and conservationist Jim Corbett is still strong here, especially at the museum dedicated to his life and work.<br>
             When it comes to food, the region offers hearty and earthy flavors. Try local specialties like <strong>Bhatt ki Churkani</strong> (a black soybean curry), <strong>Aloo Ke Gutke</strong> (spiced potatoes), and <strong>Mandua roti</strong>. Seasonal green vegetables, local pulses, and wood-smoked cooking give Kumaoni food its distinct taste. Wash it down with a glass of Buransh juice (made from rhododendron flowers) or sip on hot chai as the forest hums in the background.
           </p>
         </div>
@@ -221,54 +252,63 @@
           <img src="w-img/Nainital_Corbett_Falls_Main.jpg" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -20px;">Corbett Waterfall</h2>
+            <p>A scenic 20-meter waterfall surrounded by dense forest, ideal for picnics and nature photography. <br/> &#128205; 25 km </p>
           </div>
         </article>
         <article class="card-item swiper-slide">
           <img src="w-img/Sonanadi-Wildlife-Sanctuary-640x853.jpg" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Sonanadi Wildlife Sanctuary</h2>
+            <p>Biodiverse sanctuary rich in elephants and leopards, forming part of Corbett Tiger Reserve’s buffer zone. <br/> &#128205; 10 km </p>
           </div>
         </article>
         <article class="card-item swiper-slide">
           <img src="w-img/Girija-Devi-Temple-2.jpg" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Girija Devi Temple</h2>
+            <p>Sacred hilltop temple dedicated to Goddess Parvati, perched on a rock amid the Kosi River’s flow. <br/> &#128205; 15 km </p>
           </div>
         </article>
         <article class="card-item swiper-slide">
           <img src="w-img/Sitabani-Wildlife-Reserve.webp" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Sitabani Wildlife Reserve</h2>
+            <p> Mythologically significant forest reserve offering safaris and birdwatching in a tranquil, offbeat setting. <br/> &#128205; 18 km </p>
           </div>
         </article>
         <article class="card-item swiper-slide">
           <img src="w-img/corbett-museum.jpg" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Corbett Museum</h2>
+            <p>Heritage museum in Jim Corbett’s former home, displaying his life, hunting gear, and conservation legacy. <br/> &#128205; 30 km </p>
           </div>
         </article>
         <article class="card-item swiper-slide">
           <img src="w-img/nakhuchiyatal.jpg" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Naukuchiatal Lake</h2>
+            <p>A nine-cornered lake surrounded by hills, perfect for boating, paragliding, and scenic relaxation. <br/> &#128205; 60 km </p>
           </div>
         </article>
         <article class="card-item swiper-slide">
           <img src="w-img/nanital.jpeg" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Nanital</h2>
+            <p> Popular hill station known for Naini Lake, colonial architecture, and cool climate with shopping and food. <br/> &#128205; 65 km </p>
           </div>
         </article>
         <article class="card-item swiper-slide">
           <img src="w-img/bhimtal-lake-nainital.jpg" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Bhimtal Lake</h2>
+            <p>Serene lake with a small island aquarium, surrounded by wooded hills and boating facilities. <br/> &#128205; 55 km </p>
           </div>
         </article>
         <article class="card-item swiper-slide">
           <img src="w-img/Ranikhet-9.png" alt="image" class="card-img" />
           <div class="card-data">
             <h2 style="text-align: center; margin-left: -25px;">Ranikhet</h2>
+            <p>Picturesque hill town offering lush meadows, colonial charm, and Himalayan views amidst pine and oak forests. <br/> &#128205; 90 km </p>
           </div>
         </article>
       </div>

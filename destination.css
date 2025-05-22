@@ -307,7 +307,9 @@ input[type="radio"] {
     height: 26rem;
     width: 37.5rem;
 }
-
+.vd-map-img {
+    height : 28.49rem;
+}
 .map-info {
     padding: 1.75rem 2.75rem;
 }
@@ -598,6 +600,7 @@ input[type="radio"] {
 .food-img-container,
 .c-img-container {
     width: 30%;
+    overflow: hidden;
 }
 
 .fnc-info {
@@ -625,7 +628,14 @@ input[type="radio"] {
 .f-img {
     height: 100%;
     width: 100%;
+    transition: all 0.4s ease;
+    filter: opacity(0.8);
 }
+.c-img:hover , .f-img:hover{
+    transform: scale(1.1);
+    filter: opacity(1);
+} 
+
 
 @media(min-width:1400px) {
     .fnc-container {
@@ -716,7 +726,7 @@ input[type="radio"] {
 }
 .card-item:hover {
     .card-data h2{
-        transform: translateY(-80px);
+        transform: translateY(-82px);
         text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
     } 
     .card-data p{
