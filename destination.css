@@ -686,16 +686,23 @@ input[type="radio"] {
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease-in;
 }
-
+.how-card:hover{
+    transform: scaleY(1.07);
+    cursor: pointer;
+}
 .by-img-con {
     height: 8.75rem;
     width: 8.75rem;
     border: 1px solid #f56502;
     border-radius: 50%;
     margin: 0 auto;
+    transition: all 0.3s ease;
 }
-
+.by-img-con:hover{
+   transform: rotate(360deg);
+}
 .by-img {
     margin: 2.25rem 1.25rem;
     vertical-align: center;
@@ -748,7 +755,7 @@ input[type="radio"] {
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     bottom: 3px;
-    background: linear-gradient(180deg, hsla(0, 48%, 59%, 0)0, rgba(0, 0, 0, 0.7)40%);
+    background: linear-gradient(180deg, hsla(0, 40%, 50%, 0)0, rgba(0, 0, 0, 0.75)38%);
 }
 
 .card-data h2 {
