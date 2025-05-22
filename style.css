@@ -1128,6 +1128,8 @@ footer {
 .col-3:hover svg {
     transform: scale(1.15);
 }
+
+/* Gallery */
 #rot-container{
     max-width: 2000px;
      display: flex;
@@ -1158,8 +1160,7 @@ footer {
     width: 100%;
     height: 100%;
     background: inherit;
-    filter: grayscale(100%);
-    
+    filter: grayscale(90%);
     z-index: 1;
 }
 /* #rot-container *{
