@@ -769,7 +769,7 @@ section{
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0.5rem 4%;
+    margin: 0.5rem 5%;
     padding: 2rem;
 }
 
@@ -864,9 +864,11 @@ section{
 /* FAQ */
 
 #faq{
+    width: 90vw;
     background: #eceaea;
     padding: 30px 20px;
-    margin: 3.175rem 5%;
+    margin: 3.175rem 4%;
+    border-radius: 1rem;
 }
 .faq-heading{
     text-align: center;
@@ -881,17 +883,17 @@ section{
 .faq-heading h1::after {
     content: " ";
     position: absolute;
-    left: 45%;
+    left: 30%;
     top: 2.5rem;
     background-color: #a85b36;
-    width: 10%;
+    width: 40%;
     height: 3px;
     transform: scaleX(1);
     transition: transform 0.3s ease-in-out;
 }
 #accordion{
     margin:60px auto;
-    width: 600px;
+    width: 700px;
 
 }
 #accordion li{
@@ -899,36 +901,49 @@ section{
     width: 100%;
     margin-bottom:10px;
     background: #fff;
-    padding: 10px;
+    border-radius: 0.5rem;
 
 }
 #accordion li label{
-    padding: 10px;
+    padding: 15px 10px 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 18px;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #D96C3B;
     cursor: pointer;
+    padding-left: 20px;
 }
 #accordion li label span{
      transform: rotate(90deg);
      font-size: 22px;
      color: #D96C3B;
 }
-#accordion label + input[type="radio"]{
+
+#accordion input[type="radio"]{
     display: none;
 }
 #accordion .content{
-    padding: 0 10px;
+    padding: 5px 10px;
     line-height: 26px;
+    font-size: 1rem;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s;
 }
-#accordion label+input[type="radio"]:checked + .content{
+#accordion input[type="radio"]:checked ~.content{
   max-height: 400px;
+}
+#accordion input[type="radio"]:checked + label {
+  background-color: #e78f67;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+#accordion input[type="radio"]:checked + label span {
+  color: white;
 }
 
 /*Contact Form*/
@@ -1234,10 +1249,10 @@ footer {
 }
 .rot-img-container span img{
     position: absolute;
-    left: 0;
+    left: -15px;
     top: 8px;
-    width: 120%;
-    height: 155px;
+    width: 130%;
+    height: 160px;
     border-radius: 0.5rem;
     transition: all 0.3s ease;
 }
