@@ -347,10 +347,13 @@ header .navigation .navigation-items a{
   margin-left: 30px;
   transition: 0.3s ease;
 }
+header .navigation .navigation-items a:hover{
+    color:#fff;
+}
 header .navigation .navigation-items a:before{
     content: "";
     position: absolute;
-    background: #fff;
+    background:#fff;
     width: 0;
     height: 3px;
     bottom: 0;
@@ -401,7 +404,7 @@ section{
     z-index: 888;
     color: #fff;
     width: 40%;
-    margin-top: 50px;
+    margin-top: 7rem;
     margin-left: -50px;
 }
 #home .content h1{
@@ -412,19 +415,58 @@ section{
     line-height: 60px;
     margin-bottom: 30px;
 }
-#home .content h1 span{
-    font-size: 2.5rem;
-    font-weight: 600;
+.typewritter{
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #fff;
+  animation: typing 4s steps(30,end)forwards,blink 0.75s step-end infinite;
+  animation-iteration-count: infinite;
+  font-size: 1.25rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+  width: 0;
+  margin-top: -0.5rem;
+}
+@keyframes typing{
+    from{width:0;}
+    to{ width:30ch;}
+}
+@keyframes blink{
+    50%{border-color: transparent;}
 }
 #home .content a{
-    background: #fff;
-    padding: 15px 35px;
-    color: #964f2e;
+     text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    color: #fff;
+    outline: 2px solid #fff;
+    position: relative;
+    overflow: hidden;
     font-size: 1.1em;
-    text-decoration: none;
-    border-radius: 2px;
+   border-radius: 2px;
+   transition: all 0.6s ease-in;
 }
-
+#home .content a:hover{
+    color: #cf441a;
+    font-weight: bold;
+   
+}
+#home .content a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    transform: skewX(0deg);
+    z-index: -1;
+    transition: width 1s;
+}
+#home .content a:hover::before{
+    width: 100%;
+}
 #home .media-icons{
     z-index: 888;
     position: absolute;
@@ -568,6 +610,7 @@ section{
     text-align: center;
     margin-top: 1rem;
     margin-left: -130px;
+    
 }
 @media(min-width:1400px){
    #destinations {
@@ -577,9 +620,14 @@ section{
 }
 .destination {
     padding: 2rem 5rem;
-    background-color: #f8f0ea;
+    /* background-color: #f8f0ea; */
     position: relative;
+   background: url(img/desbg.jpg) center no-repeat fixed;
+    background-size: cover;
+
 }
+
+
 .des-heading,
 .d-description {
     text-align: center;
@@ -654,6 +702,7 @@ section{
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease-in-out;
     cursor: pointer;
+    transition: all 0.3s ease-in;
 }
 
 .hidden-card {
@@ -669,8 +718,8 @@ section{
 .card-img {
     height: 12.5rem;
     width: 100%;
+   
 }
-
 .card-info {
     padding: 1rem;
 }
